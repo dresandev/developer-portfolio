@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import { GeistSans } from "geist/font/sans"
 import { ThemeProvider } from "next-themes"
+import Header from "~/components/Header"
 import "./style.linaria.global"
 
 export const metadata: Metadata = {
@@ -17,9 +18,12 @@ export default function RootLayout({
 	return (
 		<html lang="en" suppressHydrationWarning>
 			<body className={GeistSans.className}>
-				<main>
-					<ThemeProvider>{children}</ThemeProvider>
-				</main>
+				<ThemeProvider>
+					<main>
+						<Header />
+						{children}
+						</main>
+				</ThemeProvider>
 			</body>
 		</html>
 	)
