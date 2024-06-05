@@ -1,6 +1,6 @@
-import { SVGProps } from "react"
+import type { SVGProps } from "react"
 
-const DresanLogo = (props: SVGProps<SVGSVGElement>) => (
+export const DresanLogo = (props: SVGProps<SVGSVGElement>) => (
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		width={106}
@@ -18,5 +18,3 @@ const DresanLogo = (props: SVGProps<SVGSVGElement>) => (
 		/>
 	</svg>
 )
-
-export default DresanLogo

@@ -1,0 +1,28 @@
+.button {
+	position: relative;
+	padding-inline: 16px;
+	background-color: transparent;
+	color: var(--color-text-secondary);
+	border-radius: 30px;
+	cursor: copy;
+}
+
+.button:hover > .showIcon {
+	opacity: 1;
+}
+
+.icon {
+	--size: 16px;
+	position: absolute;
+	inset-block: 0;
+	inset-inline-end: -16px;
+	margin-block: auto;
+	inline-size: var(--size);
+	block-size: var(--size);
+	opacity: 0;
+	transition: opacity 200ms;
+}
+
+.hideIcon {
+	opacity: 0;
+}

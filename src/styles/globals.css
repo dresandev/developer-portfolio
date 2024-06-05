@@ -1,0 +1,57 @@
+:root {
+	--ease-elastic-out-3: cubic-bezier(0.5, 1.25, 0.75, 1.25);
+	--ease-elastic-3: var(--ease-elastic-out-3);
+	--ease-elastic-out-4: cubic-bezier(0.5, 1.5, 0.75, 1.25);
+	--ease-elastic-4: var(--ease-elastic-out-4);
+	--ease-3: cubic-bezier(0.25, 0, 0.3, 1);
+	--ease-out-5: cubic-bezier(0, 0, 0, 1);
+	--header-block-size: 64px;
+
+	scrollbar-color: hsl(0, 0%, 80%) var(--color-background);
+	scrollbar-width: thin;
+	font-size: 16px;
+}
+
+[data-theme="light"] {
+	--color-background-hsl: 0 0% 93%;
+	--color-text-hsl: 0 0% 1%;
+	--color-stroke-hsl: 0 3% 84%;
+
+	--color-primary: hsl(212 100% 48%);
+	--color-text: hsl(0 0% 1%);
+	--color-text-secondary: hsl(0 0% 40%);
+	--color-background: hsl(0 0% 93%);
+	--color-background-secondary: hsl(0 0% 62%);
+	--color-stroke: hsl(0, 2%, 76%);
+}
+
+[data-theme="dark"] {
+	--color-background-hsl: 0 0% 1%;
+	--color-text-hsl: 0 0% 93%;
+	--color-stroke-hsl: 0 0% 12%;
+
+	--color-primary: hsl(212 100% 48%);
+	--color-text: hsl(0 0% 93%);
+	--color-text-secondary: hsl(0 0% 62%);
+	--color-background: hsl(0 0% 1%);
+	--color-background-secondary: hsl(0 0% 6%);
+	--color-stroke: hsl(0 0% 12%);
+}
+
+::selection {
+	background-color: var(--color-primary);
+	color: hsl(0 0% 100%);
+}
+
+:focus-visible {
+	outline: 2px solid hsl(210 100% 66%);
+	outline-offset: 2px;
+	border-radius: 1px;
+}
+
+body {
+	text-rendering: optimizeSpeed;
+	accent-color: var(--color-primary);
+	color: var(--color-text);
+	background-color: var(--color-background);
+}

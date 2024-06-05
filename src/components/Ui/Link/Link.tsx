@@ -1,12 +1,15 @@
-import Link from "next/link"
-import { styled } from "@linaria/react"
+import NextLink from "next/link"
+import styles from "./Link.module.css"
 
-export default styled(Link)`
-	text-decoration: none;
-	color: var(--color-text-secondary);
-	transition: color 150ms ease;
+interface Props extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
+	children: React.ReactNode
+	href: string
+}
 
-	&:hover {
-		color: var(--color-text);
-	}
-`
+export const Link: React.FC<Props> = ({ href, children, ...delegated }) => {
+	return (
+		<NextLink className={styles.link} href={href} {...delegated}>
+			{children}
+		</NextLink>
+	)
+}

@@ -1,0 +1,82 @@
+.button {
+	--size: 24px;
+	inline-size: var(--size);
+	block-size: var(--size);
+	padding: 0;
+	color: var(--color-text-secondary);
+	background-color: transparent;
+	border: none;
+	touch-action: manipulation;
+	-webkit-tap-highlight-color: transparent;
+	cursor: pointer;
+	transition: color 150ms ease;
+}
+
+.button:hover {
+	color: var(--color-text);
+}
+
+.sunAndMoon {
+	--size: 100%;
+	inline-size: var(--size);
+	block-size: var(--size);
+}
+
+:is(.moon, .sun, .sunBeams) {
+	transform-origin: center;
+}
+
+[data-theme="dark"] .moon > circle {
+	transform: translate(-7px);
+}
+
+[data-theme="dark"] .sun {
+	transform: scale(1.75);
+}
+
+[data-theme="dark"] .sunBeams {
+	opacity: 0;
+}
+
+@supports (cx: 1) {
+	[data-theme="dark"] .moon > circle {
+		cx: 17;
+		transform: translate(0);
+	}
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.moon > circle {
+		transition: transform 250ms var(--ease-out-5);
+	}
+
+	[data-theme="dark"] .moon > circle {
+		transition-delay: 250ms;
+		transition-duration: 500ms;
+	}
+
+	.sun {
+		transition: transform 500ms var(--ease-elastic-3);
+	}
+
+	[data-theme="dark"] .sun {
+		transform: scale(1.75);
+		transition-timing-function: var(--ease-3);
+		transition-duration: 250ms;
+	}
+
+	.sunBeams {
+		transition: transform 500ms var(--ease-elastic-4), opacity 500ms var(--ease-3);
+	}
+
+	[data-theme="dark"] .sunBeams {
+		transform: rotate(-25deg);
+		transition-duration: 150ms;
+	}
+
+	@supports (cx: 1) {
+		.moon > circle {
+			transition: cx 250ms var(--ease-out-5);
+		}
+	}
+}

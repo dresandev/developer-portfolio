@@ -1,21 +1,26 @@
-import { styled } from "@linaria/react"
+import { clsx } from "clsx"
+import { Slot } from "~/components/Slot"
+import styles from "./Button.module.css"
 
-export default styled.button`
-	display: flex;
-	align-items: center;
-	block-size: 32px;
-	padding-inline: 6px;
-	font-size: 14px;
-	font-weight: 500;
-	border: none;
-	border-radius: 6px;
-	background-color: var(--color-text);
-	color: var(--color-background);
-	cursor: pointer;
-	user-select: none;
-	transition: background-color 150ms;
+interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+	asChild?: boolean
+	size?: "large" | "small"
+	variant?: "primary" | "outlined"
+}
 
-	&:hover {
-		background-color: var(--color-background-hover);
-	}
-`
+export const Button: React.FC<Props> = ({
+	className,
+	size = "large",
+	variant = "primary",
+	asChild,
+	...delegated
+}) => {
+	const Comp = asChild ? Slot : "button"
+
+	return (
+		<Comp
+			className={clsx(styles.button, styles[variant], styles[size], className)}
+			{...delegated}
+		/>
+	)
+}
