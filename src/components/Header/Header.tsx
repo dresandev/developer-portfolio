@@ -1,8 +1,10 @@
+
 import NextLink from "next/link"
 import { DresanLogo } from "~/components/Svg/DresanLogo"
 import { ThemeSwitcher } from "~/components/ThemeSwitcher"
 import { Button } from "~/components/Ui/Button"
 import { Link } from "~/components/Ui/Link"
+import { MenuMobile } from "~/components/MenuMobile"
 import styles from "./Header.module.css"
 
 export const Header = () => {
@@ -25,9 +27,12 @@ export const Header = () => {
 					</ul>
 				</nav>
 				<div className={styles.optionsWrapper}>
-					<Button size="small">Contactar</Button>
+					<Button size="small" type="button">
+						Contactar
+					</Button>
 					<ThemeSwitcher />
 				</div>
+				<MenuMobile />
 			</div>
 		</header>
 	)

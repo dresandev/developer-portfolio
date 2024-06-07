@@ -9,6 +9,7 @@
 
 	scrollbar-color: hsl(0, 0%, 80%) var(--color-background);
 	scrollbar-width: thin;
+	scrollbar-gutter: stable;
 	font-size: 16px;
 }
 
@@ -54,4 +55,8 @@ body {
 	accent-color: var(--color-primary);
 	color: var(--color-text);
 	background-color: var(--color-background);
+}
+
+.hide-overflow {
+	overflow-y: hidden;
 }

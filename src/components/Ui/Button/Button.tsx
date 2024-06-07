@@ -4,7 +4,7 @@ import styles from "./Button.module.css"
 
 interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 	asChild?: boolean
-	size?: "large" | "small"
+	size?: "large" | "medium" | "small"
 	variant?: "primary" | "outlined"
 }
 

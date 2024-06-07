@@ -1,32 +1,26 @@
 .wrapper {
-	display: grid;
-	justify-items: center;
-	align-content: center;
-	padding-block-start: 80px;
+	--items-padding: 24px;
+	text-align: center;
 }
 
 .phrase {
-	padding: 32px;
+	padding: var(--items-padding);
 	color: var(--color-text-secondary);
 }
 
 .title {
-	--text-gradient: linear-gradient(180deg, #555, #000);
-	padding-block: 24px;
+	--text-gradient: linear-gradient(180deg, hsl(0 0% 33%), hsl(0 0% 0%));
+	padding: var(--items-padding) 12px;
+	font: 900 clamp(42px, 34.4px + 2.375vw, 80px) / 1 var(--font-geist-sans);
 	background-image: var(--text-gradient);
 	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	font-size: 80px;
-	font-weight: 900;
-	line-height: normal;
-	text-align: center;
-	border: 1px dashed var(--color-stroke);
-	width: 100%;
+	border-block: 1px dashed var(--color-stroke);
 }
 
 [data-theme="dark"] .title {
-	--text-gradient: linear-gradient(180deg, #fff, #adadad);
+	--text-gradient: linear-gradient(180deg, hsl(0 0% 100%), hsl(0 0% 68%));
 }
 
 .title::selection {
@@ -36,17 +30,46 @@
 }
 
 .introSubtitle {
-	padding: 32px;
-	font-size: 20px;
+	padding: var(--items-padding);
+	font-size: clamp(18px, 17.296px + 0.141vw, 20px);
 	color: var(--color-text-secondary);
+	border-block-end: 1px dashed var(--color-stroke);
 }
 
 .introSubtitle > strong {
 	color: var(--color-text);
+	font-weight: 500;
 }
 
 .actions {
 	display: flex;
-	gap: 0 24px;
-	padding: 40px;
+	flex-direction: column;
+	gap: 16px;
+	padding: var(--items-padding);
+}
+
+.copyEmailButton {
+	align-self: center;
+}
+
+@media screen and (min-width: 568px) {
+	.actions {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		max-width: 580px;
+		margin-inline: auto;
+	}
+
+	.actionBtn {
+		flex: 1 0 250px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.wrapper {
+		--items-padding: 32px;
+		inline-size: fit-content;
+		margin: 80px auto;
+	}
 }

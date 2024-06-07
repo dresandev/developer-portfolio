@@ -12,3 +12,7 @@ export const copyToClipboard = async (text: string) => {
 		return false
 	}
 }
+
+export const toggleBodyOverflow = (force: boolean = false) => {
+	document.body.classList.toggle("hide-overflow", force)
+}

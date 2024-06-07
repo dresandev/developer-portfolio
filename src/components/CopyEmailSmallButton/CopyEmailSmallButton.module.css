@@ -1,6 +1,6 @@
 .button {
 	position: relative;
-	padding-inline: 16px;
+	padding-inline: 12px;
 	background-color: transparent;
 	color: var(--color-text-secondary);
 	border-radius: 30px;
@@ -8,7 +8,15 @@
 }
 
 .button:hover > .showIcon {
+	transition: opacity 200ms;
+}
+
+.button:is(:hover, :focus-visible) > .showIcon {
 	opacity: 1;
+}
+
+.button:focus-visible > .showIcon {
+	inset-inline-end: -28px;
 }
 
 .icon {
@@ -19,10 +27,5 @@
 	margin-block: auto;
 	inline-size: var(--size);
 	block-size: var(--size);
-	opacity: 0;
-	transition: opacity 200ms;
-}
-
-.hideIcon {
 	opacity: 0;
 }

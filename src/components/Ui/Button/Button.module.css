@@ -1,5 +1,6 @@
 .button {
 	display: flex;
+	justify-content: center;
 	align-items: center;
 	gap: 0 4px;
 	font-weight: 500;
@@ -35,6 +36,12 @@
 	block-size: 48px;
 	padding-inline: 14px;
 	font-size: 16px;
+}
+
+.medium {
+	block-size: 40px;
+	padding-inline: 16px;
+	font-size: 14px;
 }
 
 .small {

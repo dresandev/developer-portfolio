@@ -2,13 +2,14 @@
 	--items-spacing: 24px;
 	position: sticky;
 	inset-block-start: 0;
+	z-index: 10;
 	display: flex;
 	justify-content: center;
 	block-size: var(--header-block-size);
 	padding-inline: 24px;
 	background-color: hsl(var(--color-background-hls) / 0.8);
-	border-block-end: 1px solid var(--color-stroke);
 	backdrop-filter: saturate(180%) blur(5px);
+	border-block-end: 1px solid var(--color-stroke);
 }
 
 .contentWrapper {
@@ -45,6 +46,13 @@
 	display: flex;
 	align-items: center;
 	gap: 0 var(--items-spacing);
+}
+
+@media screen and (max-width: 768px) {
+	.nav,
+	.optionsWrapper {
+		display: none;
+	}
 }
 
 @keyframes dash {

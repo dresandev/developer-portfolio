@@ -8,10 +8,14 @@ import { CheckIcon } from "~/components/Svg/CheckIcon"
 import { CopyIcon } from "~/components/Svg/CopyIcon"
 import styles from "./CopyEmailSmallButton.module.css"
 
-const RESET_FEEDBACK_TIME = 2500
+const RESET_FEEDBACK_TIME = 2000
 const TO_COPY_EMAIL = "dresan.dev@gmail.com"
 
-export const CopyEmailSmallButton = () => {
+interface Props {
+	className?: string
+}
+
+export const CopyEmailSmallButton: React.FC<Props> = ({ className }) => {
 	const [displayFeedback, setDisplayFeedback] = useState(false)
 
 	const hideFeedback = () => {
@@ -26,14 +30,9 @@ export const CopyEmailSmallButton = () => {
 	}
 
 	return (
-		<button className={styles.button} onClick={handleOnClick}>
+		<button className={clsx(styles.button, className)} onClick={handleOnClick}>
 			<span>✉ {TO_COPY_EMAIL}</span>
-			<CopyIcon
-				className={clsx(styles.icon, {
-					[styles.showIcon]: !displayFeedback,
-					[styles.hideIcon]: displayFeedback,
-				})}
-			/>
+			<CopyIcon className={clsx(styles.icon, { [styles.showIcon]: !displayFeedback })} />
 			<CheckIcon className={clsx(styles.icon, { [styles.showIcon]: displayFeedback })} />
 		</button>
 	)
