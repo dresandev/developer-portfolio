@@ -6,6 +6,7 @@
 	block-size: calc(100dvh - var(--header-block-size));
 	padding-inline: var(--items-padding);
 	background-color: var(--color-background);
+	overflow-y: auto;
 	visibility: hidden;
 	opacity: 0;
 	transition: visibility 300ms ease-in-out, opacity 300ms ease-in-out;
@@ -17,7 +18,7 @@
 }
 
 .navList {
-	padding-block-start: 24px;
+	padding-block: 24px 48px;
 	list-style: none;
 	padding-inline-start: 0;
 }

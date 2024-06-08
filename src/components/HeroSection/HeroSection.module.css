@@ -50,12 +50,12 @@
 	align-self: center;
 }
 
-@media screen and (min-width: 568px) {
+@media screen and (min-width: 575px) {
 	.actions {
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: center;
-		max-width: 580px;
+		max-inline-size: 580px;
 		margin-inline: auto;
 	}
 
