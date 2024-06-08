@@ -1,4 +1,5 @@
 import NextLink from "next/link"
+import clsx from "clsx"
 import styles from "./Link.module.css"
 
 interface Props extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
@@ -6,9 +7,9 @@ interface Props extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
 	href: string
 }
 
-export const Link: React.FC<Props> = ({ href, children, ...delegated }) => {
+export const Link: React.FC<Props> = ({ href, children, className, ...delegated }) => {
 	return (
-		<NextLink className={styles.link} href={href} {...delegated}>
+		<NextLink className={clsx(styles.link, className)} href={href} {...delegated}>
 			{children}
 		</NextLink>
 	)

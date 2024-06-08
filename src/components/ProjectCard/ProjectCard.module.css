@@ -1,0 +1,14 @@
+.card:hover .image {
+	filter: saturate(100%);
+}
+
+.image {
+	border-radius: 8px;
+	filter: saturate(0);
+	transition: filter 150ms;
+}
+
+.title {
+  padding-block-start: 16px;
+	font-size: 20px;
+}

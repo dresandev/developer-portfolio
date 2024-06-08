@@ -1,8 +1,9 @@
 import type { Metadata } from "next"
 import { GeistSans } from "geist/font/sans"
 import { ThemeProvider } from "next-themes"
-import { Header } from "~/components/Header"
 import { SvgMasks } from "~/components/Svg/SvgMasks"
+import { Header } from "~/components/Header"
+import { Footer } from "~/components/Footer"
 import "~/styles/reset.css"
 import "~/styles/globals.css"
 
@@ -18,12 +19,13 @@ export default function RootLayout({
 	children: React.ReactNode
 }>) {
 	return (
-		<html lang="en" suppressHydrationWarning>
+		<html lang="es" suppressHydrationWarning>
 			<body className={`${GeistSans.className} ${GeistSans.variable}`}>
 				<ThemeProvider>
 					<SvgMasks />
 					<Header />
 					<main>{children}</main>
+					<Footer />
 				</ThemeProvider>
 			</body>
 		</html>

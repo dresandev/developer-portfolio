@@ -1,0 +1,18 @@
+.footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-inline-size: var(--max-inline-size);
+	margin-inline: auto;
+	font-size: 24px;
+	block-size: 100px;
+}
+
+.linksWrapper {
+	display: flex;
+	gap: 16px;
+}
+
+.link {
+	display: flex;
+}

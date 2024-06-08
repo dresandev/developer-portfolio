@@ -7,6 +7,7 @@
 	--ease-out-5: cubic-bezier(0, 0, 0, 1);
 	--header-block-size: 64px;
 	--padding-inline: 24px;
+	--max-inline-size: 1400px;
 
 	scrollbar-color: hsl(0, 0%, 80%) var(--color-background);
 	scrollbar-width: thin;
@@ -71,6 +72,10 @@ body {
 	color: var(--color-text);
 	background-color: var(--color-background);
 	transition: color 150ms, background-color 150ms;
+}
+
+h2 {
+	font-size: 32px;
 }
 
 .hide-overflow {
