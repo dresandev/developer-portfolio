@@ -41,7 +41,7 @@ export const MenuMobile = () => {
 					<Button className={styles.contactButton} size="medium" type="button">
 						Contactar
 					</Button>
-					<div>
+					<div className={styles.themeWrapper}>
 						<span>Tema</span> <ThemeSwitcher />
 					</div>
 				</div>

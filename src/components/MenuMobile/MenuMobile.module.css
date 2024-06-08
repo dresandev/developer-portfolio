@@ -1,10 +1,10 @@
 .menu {
+	--items-padding: 12px;
 	position: fixed;
 	inset: var(--header-block-size) 0;
 	display: grid;
-	/* align-content: center; */
 	block-size: calc(100dvh - var(--header-block-size));
-	padding-inline: 24px;
+	padding-inline: var(--items-padding);
 	background-color: var(--color-background);
 	visibility: hidden;
 	opacity: 0;
@@ -17,23 +17,38 @@
 }
 
 .navList {
+	padding-block-start: 24px;
 	list-style: none;
 	padding-inline-start: 0;
 }
 
 .navLink {
-	font-size: 30px;
-	font-weight: 700;
+	display: flex;
+	align-items: center;
+	block-size: 48px;
+	padding-inline: var(--items-padding);
+	color: var(--color-text-secondary);
 }
 
 .optionsWrapper {
 	display: flex;
 	flex-direction: column;
-	inline-size: 100%;
+	row-gap: 32px;
+	margin-block-start: auto;
 }
 
 .contactButton {
-	/* inline-size: 100%; */
+	margin-inline: var(--items-padding);
+}
+
+.themeWrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	block-size: 72px;
+	padding-inline: var(--items-padding);
+	color: var(--color-text-secondary);
+	border-block-start: 1px dashed var(--color-stroke);
 }
 
 .button {
@@ -47,6 +62,7 @@
 	margin-inline-start: auto;
 	background-color: transparent;
 	padding-inline: 0;
+	-webkit-tap-highlight-color: transparent;
 }
 
 .buttonLine {

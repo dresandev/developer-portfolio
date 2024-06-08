@@ -7,8 +7,8 @@
 	text-decoration: none;
 	border-radius: 6px;
 	user-select: none;
-	transition-property: background-color;
-	transition-duration: 150ms;
+	-webkit-tap-highlight-color: transparent;
+	transition: background-color 150ms;
 }
 
 .primary {
@@ -16,20 +16,38 @@
 	color: var(--color-background);
 }
 
-.primary:hover {
-	background-color: hsl(var(--color-text-hsl) / 0.85);
+.primary:active {
+	background-color: hsl(var(--color-text-hsl) / 0.8);
 }
 
 .outlined {
-	background-color: transparent;
+	--hover-color-background: hsl(0 0% 88%);
+	--hover-color-stroke: hsl(0 0 0 / 0.12);
+	background-color: var(--color-themed-background);
 	color: var(--color-text);
-	border: 1px solid var(--color-stroke);
+	border: 1px solid var(--color-themed-stroke);
+	transition-property: background-color, border-color;
 }
 
-.outlined:hover {
-	background-color: #1f1f1f;
-	border-color: hsl(0 0% 100% / 0.14);
-	transition-property: background-color, border-color;
+[data-theme="dark"] .outlined {
+	--hover-color-background: hsl(0 0% 12%);
+	--hover-color-stroke: hsl(0 0% 100% / 0.17);
+}
+
+.outlined:active {
+	background-color: var(--hover-color-background);
+	border-color: var(--hover-color-stroke);
+}
+
+@media (hover: hover) {
+	.primary:hover {
+		background-color: hsl(var(--color-text-hsl) / 0.8);
+	}
+
+	.outlined:hover {
+		background-color: var(--hover-color-background);
+		border-color: var(--hover-color-stroke);
+	}
 }
 
 .large {

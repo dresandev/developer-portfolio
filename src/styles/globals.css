@@ -6,11 +6,18 @@
 	--ease-3: cubic-bezier(0.25, 0, 0.3, 1);
 	--ease-out-5: cubic-bezier(0, 0, 0, 1);
 	--header-block-size: 64px;
+	--padding-inline: 24px;
 
 	scrollbar-color: hsl(0, 0%, 80%) var(--color-background);
 	scrollbar-width: thin;
 	scrollbar-gutter: stable;
 	font-size: 16px;
+}
+
+@media screen and (min-width: 768px) {
+	:root {
+		--padding-inline: 32px;
+	}
 }
 
 [data-theme="light"] {
@@ -22,8 +29,12 @@
 	--color-text: hsl(0 0% 1%);
 	--color-text-secondary: hsl(0 0% 40%);
 	--color-background: hsl(0 0% 93%);
+	--color-themed-background: hsl(0 0% 93%);
 	--color-background-secondary: hsl(0 0% 62%);
-	--color-stroke: hsl(0, 2%, 76%);
+	--color-stroke: hsl(0 2% 76%);
+	--color-themed-stroke: hsla(0 0 0 / 0.08);
+
+	--text-gradient: linear-gradient(180deg, hsl(0 0% 33%), hsl(0 0% 0%));
 }
 
 [data-theme="dark"] {
@@ -35,8 +46,12 @@
 	--color-text: hsl(0 0% 93%);
 	--color-text-secondary: hsl(0 0% 62%);
 	--color-background: hsl(0 0% 1%);
+	--color-themed-background: hsl(0 0% 4%);
 	--color-background-secondary: hsl(0 0% 6%);
 	--color-stroke: hsl(0 0% 12%);
+	--color-themed-stroke: hsl(0 0% 100% / 0.14);
+
+	--text-gradient: linear-gradient(180deg, hsl(0 0% 100%), hsl(0 0% 68%));
 }
 
 ::selection {
@@ -55,6 +70,7 @@ body {
 	accent-color: var(--color-primary);
 	color: var(--color-text);
 	background-color: var(--color-background);
+	transition: color 150ms, background-color 150ms;
 }
 
 .hide-overflow {
