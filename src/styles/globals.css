@@ -6,6 +6,7 @@
 	--ease-3: cubic-bezier(0.25, 0, 0.3, 1);
 	--ease-out-5: cubic-bezier(0, 0, 0, 1);
 	--header-block-size: 64px;
+	--footer-block-size: 100px;
 	--space-inline: 24px;
 	--space-block: 32px;
 	--max-inline-size: 1400px;

@@ -1,0 +1,20 @@
+.wrapper {
+	--safe-space: 5px;
+	display: grid;
+	justify-items: center;
+	align-content: center;
+	min-block-size: calc(
+		100dvh - var(--header-block-size) - var(--footer-block-size) - var(--safe-space)
+	);
+	padding-block: 32px;
+}
+
+.title {
+	font-size: clamp(9.375rem, 8.617rem + 3.236vw, 12.5rem);
+	line-height: 1;
+}
+
+.description {
+	font-size: 20px;
+	padding-block-end: 24px;
+}

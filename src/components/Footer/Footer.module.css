@@ -2,6 +2,8 @@
 	padding-inline: var(--space-inline);
 	border-block-start: 1px solid var(--color-stroke);
 	font-size: clamp(20px, 19.024px + 0.259vw, 24px);
+	transition: border-block-start-color 150ms;
+	min-block-size: 100px;
 }
 
 .footer {
@@ -11,7 +13,6 @@
 	justify-content: space-between;
 	align-items: center;
 	max-inline-size: var(--max-inline-size);
-	min-block-size: 100px;
 	margin-inline: auto;
 	padding-block: 32px;
 }
