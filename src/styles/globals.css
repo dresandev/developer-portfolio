@@ -6,19 +6,14 @@
 	--ease-3: cubic-bezier(0.25, 0, 0.3, 1);
 	--ease-out-5: cubic-bezier(0, 0, 0, 1);
 	--header-block-size: 64px;
-	--padding-inline: 24px;
+	--space-inline: 24px;
+	--space-block: 32px;
 	--max-inline-size: 1400px;
 
 	scrollbar-color: hsl(0, 0%, 80%) var(--color-background);
 	scrollbar-width: thin;
 	scrollbar-gutter: stable;
 	font-size: 16px;
-}
-
-@media screen and (min-width: 768px) {
-	:root {
-		--padding-inline: 32px;
-	}
 }
 
 [data-theme="light"] {
@@ -75,9 +70,20 @@ body {
 }
 
 h2 {
-	font-size: 32px;
+	font-size: 24px;
 }
 
 .hide-overflow {
 	overflow-y: hidden;
+}
+
+@media screen and (min-width: 768px) {
+	:root {
+		--space-inline: 32px;
+		--space-block: 80px;
+	}
+
+	h2 {
+		font-size: 32px;
+	}
 }

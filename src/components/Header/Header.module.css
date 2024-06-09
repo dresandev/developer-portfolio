@@ -10,7 +10,7 @@
 	background-color: hsl(var(--color-background-hsl) / 0.8);
 	backdrop-filter: saturate(180%) blur(5px);
 	border-block-end: 1px solid var(--color-stroke);
-	transition: border-block-end-color 150ms;
+	transition: border-block-end-color 150ms, background-color 150ms;
 }
 
 .contentWrapper {

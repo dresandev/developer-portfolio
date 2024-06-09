@@ -1,0 +1,22 @@
+.section {
+	padding: var(--space-block) var(--space-inline);
+	border-block-start: 1px dashed var(--color-stroke);
+}
+
+.title {
+	text-align: center;
+	padding-block-end: var(--space-block);
+}
+
+.projectsWrapper {
+	display: grid;
+	gap: 32px;
+}
+
+@media screen and (min-width: 768px) {
+	.projectsWrapper {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		max-inline-size: var(--max-inline-size);
+		margin-inline: auto;
+	}
+}

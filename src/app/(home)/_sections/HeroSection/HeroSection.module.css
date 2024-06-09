@@ -1,10 +1,10 @@
 .wrapper {
 	text-align: center;
-	margin-block-end: 80px;
+	margin-block-end: var(--space-block);
 }
 
 .phrase {
-	padding: var(--padding-inline);
+	padding: var(--space-inline);
 	color: var(--color-text-secondary);
 }
 
@@ -13,7 +13,7 @@
 }
 
 .title {
-	padding: var(--padding-inline) 12px;
+	padding: var(--space-inline) 12px;
 	font: 900 clamp(42px, 34.4px + 2.375vw, 80px) / 1 var(--font-geist-sans);
 	background-image: var(--text-gradient);
 	background-clip: text;
@@ -29,7 +29,7 @@
 }
 
 .introSubtitle {
-	padding: var(--padding-inline);
+	padding: var(--space-inline);
 	font-size: clamp(18px, 17.296px + 0.141vw, 20px);
 	color: var(--color-text-secondary);
 	border-block-end: 1px dashed var(--color-stroke);
@@ -44,7 +44,7 @@
 	display: flex;
 	flex-direction: column;
 	gap: 16px;
-	padding: var(--padding-inline);
+	padding: var(--space-inline);
 }
 
 .copyEmailButton {
@@ -68,6 +68,6 @@
 @media screen and (min-width: 768px) {
 	.wrapper {
 		inline-size: fit-content;
-		margin: 80px auto;
+		margin: var(--space-block) auto;
 	}
 }

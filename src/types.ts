@@ -3,9 +3,8 @@ interface Link {
 	url: string
 }
 
-export interface Project {
+export interface CoverProject {
 	name: string
 	description: string
-	links: Link[]
 	imageUrl: string
 }

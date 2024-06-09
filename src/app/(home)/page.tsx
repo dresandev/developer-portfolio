@@ -1,5 +1,5 @@
-import { HeroSection } from "./sections/HeroSection"
-import { ProjectsSection } from "./sections/ProjectsSection"
+import { HeroSection } from "./_sections/HeroSection"
+import { ProjectsSection } from "./_sections/ProjectsSection"
 
 export default function Home() {
 	return (

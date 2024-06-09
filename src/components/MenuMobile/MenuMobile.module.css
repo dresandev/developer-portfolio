@@ -9,7 +9,7 @@
 	overflow-y: auto;
 	visibility: hidden;
 	opacity: 0;
-	transition: visibility 300ms ease-in-out, opacity 300ms ease-in-out;
+	transition: visibility 300ms, opacity 300ms, background-color 150ms;
 }
 
 .menu.open {

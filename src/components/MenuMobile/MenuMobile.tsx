@@ -18,6 +18,15 @@ export const MenuMobile = () => {
 
 	return (
 		<>
+			<button
+				className={clsx(styles.button, { [styles.open]: open })}
+				aria-label={`${open ? "Cerrar" : "Abrir"} menú`}
+				type="button"
+				onClick={handleOnClick}
+			>
+				<span className={styles.buttonLine}></span>
+				<span className={styles.buttonLine}></span>
+			</button>
 			<div className={clsx(styles.menu, { [styles.open]: open })}>
 				<nav className={styles.nav}>
 					<ul className={styles.navList}>
@@ -46,15 +55,6 @@ export const MenuMobile = () => {
 					</div>
 				</div>
 			</div>
-			<button
-				className={clsx(styles.button, { [styles.open]: open })}
-				aria-label={`${open ? "Cerrar" : "Abrir"} menú`}
-				type="button"
-				onClick={handleOnClick}
-			>
-				<span className={styles.buttonLine}></span>
-				<span className={styles.buttonLine}></span>
-			</button>
 		</>
 	)
 }
