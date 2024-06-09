@@ -11,7 +11,7 @@
 	--space-block: 32px;
 	--max-inline-size: 1400px;
 
-	scrollbar-color: hsl(0, 0%, 80%) var(--color-background);
+	scrollbar-color: hsl(var(--color-text-hsl) / 0.8) var(--color-background);
 	scrollbar-width: thin;
 	scrollbar-gutter: stable;
 	font-size: 16px;
