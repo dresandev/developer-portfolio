@@ -1,32 +1,16 @@
 .section {
-	display: grid;
-	grid-template-columns: repeat(7, 170px);
-	grid-template-rows: repeat(3, 170px);
-	gap: 1px;
-	inline-size: fit-content;
-	margin: var(--space-block) auto;
-	border: 1px solid var(--color-stroke);
-	background-color: var(--color-stroke);
-	transition: background-color 150ms, border-color 150ms;
-}
-
-.section > * {
-	background-color: var(--color-background);
-	transition: background-color 150ms;
-}
-
-.section div {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	inline-size: 100%;
-	block-size: 100%;
+	padding: var(--space-block) var(--space-inline);
+	border-block-start: 1px dashed var(--color-stroke);
+	transition: background-color 150ms, border-block-start-color 150ms;
 }
 
 .title {
-	grid-column: span 2;
+	text-align: center;
+	padding-block-end: 32px;
 }
 
 .aboutMe {
-	grid-column: span 5;
+	font-size: clamp(1.125rem, 1.034rem + 0.388vw, 1.5rem);
+	max-inline-size: 60ch;
+	margin-inline: auto;
 }

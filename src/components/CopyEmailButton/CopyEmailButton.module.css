@@ -1,0 +1,35 @@
+.wrapper {
+	position: relative;
+	padding-block: 64px;
+}
+
+.toast {
+	position: absolute;
+	z-index: -1;
+	padding: 8px 10px;
+	background-color: var(--color-text);
+	color: var(--color-background);
+	border-radius: 4px;
+	font-size: 14px;
+	font-weight: 500;
+	opacity: 0;
+	transition: opacity 300ms, transform 300ms;
+}
+
+.enterToast {
+	opacity: 1;
+	transform: translateY(-2.5rem);
+}
+
+.button {
+	padding-inline: 0;
+	font-size: clamp(25px, 19.424px + 1.489vw, 48px);
+	text-decoration: underline;
+	background-color: transparent;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.hintMessage {
+	font-size: 14px;
+	color: var(--color-text-secondary);
+}

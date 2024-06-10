@@ -6,7 +6,7 @@ import styles from "./HeroSection.module.css"
 
 export const HeroSection = () => {
 	return (
-		<section className={styles.wrapper}>
+		<section className={styles.section}>
 			<p className={styles.phrase}>El código más limpio es el que no se escribió.</p>
 			<h1 className={styles.title}>Dresan - Desarrollador Frontend</h1>
 			<p className={styles.introSubtitle}>
