@@ -4,6 +4,7 @@ interface Link {
 }
 
 export interface CoverProject {
+	slug: string
 	name: string
 	imageUrl: string
 }

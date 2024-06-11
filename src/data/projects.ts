@@ -4,15 +4,18 @@ const COVER_IMAGE_BASE_PATH = "assets/images/projects/"
 
 export const coverProjects: CoverProject[] = [
 	{
-		name: "Dreflix",
+		slug: "dreflix",
 		imageUrl: `${COVER_IMAGE_BASE_PATH}dreflix-cover.webp`,
+		name: "Dreflix",
 	},
 	{
-		name: "Vexara",
+		slug: "vexara",
 		imageUrl: `${COVER_IMAGE_BASE_PATH}vexara-cover.webp`,
+		name: "Vexara",
 	},
 	{
-		name: "Personal link manager",
+		slug: "personal-link-manager",
 		imageUrl: `${COVER_IMAGE_BASE_PATH}personal-link-manager-cover.webp`,
+		name: "Personal link manager",
 	},
 ]
