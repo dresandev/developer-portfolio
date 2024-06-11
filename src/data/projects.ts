@@ -12,7 +12,7 @@ export const coverProjects: CoverProject[] = [
 		imageUrl: `${COVER_IMAGE_BASE_PATH}vexara-cover.webp`,
 	},
 	{
-		name: "Personal links manager",
-		imageUrl: `${COVER_IMAGE_BASE_PATH}links-manager-cover.webp`,
+		name: "Personal link manager",
+		imageUrl: `${COVER_IMAGE_BASE_PATH}personal-link-manager-cover.webp`,
 	},
 ]
