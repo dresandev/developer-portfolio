@@ -1,16 +1,9 @@
-.section {
-	padding: var(--space-block) var(--space-inline);
-	border-block-start: 1px dashed var(--color-stroke);
-	transition: background-color 150ms, border-block-start-color 150ms;
-}
-
 .title {
 	text-align: center;
-	padding-block-end: 32px;
 }
 
 .aboutMe {
 	font-size: clamp(1.125rem, 1.034rem + 0.388vw, 1.5rem);
 	max-inline-size: 60ch;
-	margin-inline: auto;
+	margin: 32px auto 0;
 }

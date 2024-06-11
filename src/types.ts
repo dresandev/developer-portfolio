@@ -5,6 +5,5 @@ interface Link {
 
 export interface CoverProject {
 	name: string
-	description: string
 	imageUrl: string
 }

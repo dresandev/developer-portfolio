@@ -26,13 +26,3 @@
 	gap: 16px;
 	flex-wrap: wrap;
 }
-
-.arrowIcon {
-	--size: 0.65em;
-	inline-size: var(--size);
-	block-size: var(--size);
-}
-
-.link {
-	display: flex;
-}

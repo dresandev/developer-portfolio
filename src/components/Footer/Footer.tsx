@@ -1,6 +1,5 @@
 import { socialMediaLinks } from "~/data/links"
 import { Link } from "~/components/Ui/Link"
-import { ArrowUpRight } from "~/components/Svg/ArrowUpRight"
 import styles from "./Footer.module.css"
 
 export const Footer = () => {
@@ -12,9 +11,8 @@ export const Footer = () => {
 				<span className={styles.year}>ฅʕ´•ᴥ•`ʔฅ - {currentYear}</span>
 				<div className={styles.linksWrapper}>
 					{socialMediaLinks.map(({ url, label }) => (
-						<Link key={url} className={styles.link} href={url} target="_blank" rel="noopener">
+						<Link key={url} className={styles.link} href={url} target="_blank">
 							{label}
-							<ArrowUpRight className={styles.arrowIcon} />
 						</Link>
 					))}
 				</div>

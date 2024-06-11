@@ -1,4 +1,3 @@
-
 import NextLink from "next/link"
 import { DresanLogo } from "~/components/Svg/DresanLogo"
 import { ThemeSwitcher } from "~/components/ThemeSwitcher"
@@ -21,7 +20,7 @@ export const Header = () => {
 						</li>
 						<li>
 							<Link href="https://personal-link-manager.vercel.app/" target="_blank">
-								Links útiles
+								Links
 							</Link>
 						</li>
 					</ul>

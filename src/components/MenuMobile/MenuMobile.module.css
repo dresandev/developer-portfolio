@@ -50,6 +50,7 @@
 	padding-inline: var(--items-padding);
 	color: var(--color-text-secondary);
 	border-block-start: 1px dashed var(--color-stroke);
+	transition: border-block-start-color 150ms;
 }
 
 .button {

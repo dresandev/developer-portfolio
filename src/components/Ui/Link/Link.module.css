@@ -1,4 +1,5 @@
 .link {
+	display: flex;
 	text-decoration: none;
 	color: var(--color-text-secondary);
 	transition: color 150ms ease;
@@ -6,4 +7,10 @@
 
 .link:hover {
 	color: var(--color-text);
+}
+
+.arrowIcon {
+	--size: 0.65em;
+	inline-size: var(--size);
+	block-size: var(--size);
 }

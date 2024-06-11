@@ -74,17 +74,21 @@ h2 {
 	font-size: 24px;
 }
 
-.hide-overflow {
-	overflow-y: hidden;
+h3 {
+	font-size: 20px;
 }
 
 @media screen and (min-width: 768px) {
 	:root {
 		--space-inline: 32px;
-		--space-block: 80px;
+		--space-block: 90px;
 	}
 
 	h2 {
 		font-size: 32px;
+	}
+
+	h3 {
+		font-size: 24px;
 	}
 }

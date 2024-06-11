@@ -1,17 +1,15 @@
 .section {
-	padding: var(--space-block) var(--space-inline);
-	border-block-start: 1px dashed var(--color-stroke);
-	transition: border-block-start-color 150ms;
+	max-inline-size: 1920px;
+	margin-inline: auto;
 }
 
 .title {
-	display: flex;
-	flex-direction: column;
-	font-size: clamp(34px, 8.8px + 7.875vw, 160px);
+	display: grid;
+	font-size: clamp(2rem, 0.4rem + 8vw, 10rem);
 	font-weight: 900;
 	line-height: normal;
 }
 
 .title > span:last-of-type {
-	align-self: flex-end;
+	justify-self: self-end;
 }
