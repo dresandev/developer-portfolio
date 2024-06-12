@@ -4,7 +4,7 @@ import styles from "./ProjectCard.module.css"
 
 interface Props extends CoverProject {}
 
-export const ProjectCard: React.FC<Props> = ({ slug, imageUrl, name }) => {
+export const ProjectCard: React.FC<Props> = ({ slug, imageUrl, name, description }) => {
 	const href = `/project/${slug}`
 
 	return (
@@ -24,6 +24,7 @@ export const ProjectCard: React.FC<Props> = ({ slug, imageUrl, name }) => {
 				/>
 			</figure>
 			<h3 className={styles.title}>{name}</h3>
+			<p>{description}</p>
 		</article>
 	)
 }
