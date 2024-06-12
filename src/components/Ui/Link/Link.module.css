@@ -1,5 +1,5 @@
 .link {
-	display: flex;
+	display: inline-flex;
 	text-decoration: none;
 	color: var(--color-text-secondary);
 	transition: color 150ms ease;
