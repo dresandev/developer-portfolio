@@ -2,6 +2,10 @@ import Link from "next/link"
 import { Button } from "~/components/Ui/Button"
 import styles from "./not-found.module.css"
 
+export const metadata = {
+	title: "Dresan - 404",
+}
+
 export default function NotFound() {
 	return (
 		<div className={styles.wrapper}>

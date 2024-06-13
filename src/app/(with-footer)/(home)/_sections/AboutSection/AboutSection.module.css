@@ -1,0 +1,14 @@
+.title {
+	text-align: center;
+	margin-block-end: 32px;
+}
+
+.aboutMeWrapper {
+	max-inline-size: 60ch;
+	margin-inline: auto;
+	font-size: clamp(1.125rem, 1.034rem + 0.388vw, 1.5rem);
+}
+
+.paragraph {
+	padding-block-start: 18px;
+}

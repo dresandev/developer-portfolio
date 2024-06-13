@@ -7,7 +7,14 @@ import styles from "./HeroSection.module.css"
 export const HeroSection = () => {
 	return (
 		<section className={styles.section}>
-			<p className={styles.phrase}>El código más limpio es el que no se escribió.</p>
+			<p className={styles.phrase}>
+				El código más limpio es el que no se escribió.{" "}
+				<Button rounded="full" size="small" asChild>
+					<Link href="https://www.linkedin.com/in/dresandev" target="_blank" rel="noopener">
+						Disponible para trabajar <span className={styles.availableCircle}></span>
+					</Link>
+				</Button>
+			</p>
 			<h1 className={styles.title}>Dresan, Desarrollador Frontend</h1>
 			<p className={styles.introSubtitle}>
 				Hago que tu proyecto <strong>destaque</strong> con la <strong>elegancia</strong> y la{" "}
@@ -15,7 +22,7 @@ export const HeroSection = () => {
 			</p>
 			<div className={styles.actions}>
 				<Button className={styles.actionBtn} type="button">
-					ʕっ•ᴥ•ʔっ Contactame
+					ʕっ•ᴥ•ʔっ Contáctame
 				</Button>
 				<Button className={styles.actionBtn} variant="outlined" asChild>
 					<Link href="/">

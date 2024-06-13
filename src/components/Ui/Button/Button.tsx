@@ -6,12 +6,14 @@ interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 	asChild?: boolean
 	size?: "large" | "medium" | "small"
 	variant?: "primary" | "outlined"
+	rounded?: "default" | "full"
 }
 
 export const Button: React.FC<Props> = ({
 	className,
 	size = "large",
 	variant = "primary",
+	rounded = "default",
 	asChild,
 	...delegated
 }) => {
@@ -19,7 +21,7 @@ export const Button: React.FC<Props> = ({
 
 	return (
 		<Comp
-			className={clsx(styles.button, styles[variant], styles[size], className)}
+			className={clsx(styles.button, styles[variant], styles[size], styles[rounded], className)}
 			{...delegated}
 		/>
 	)

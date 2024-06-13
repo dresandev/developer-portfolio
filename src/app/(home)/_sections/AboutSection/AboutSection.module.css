@@ -1,9 +1,0 @@
-.title {
-	text-align: center;
-}
-
-.aboutMe {
-	font-size: clamp(1.125rem, 1.034rem + 0.388vw, 1.5rem);
-	max-inline-size: 60ch;
-	margin: 32px auto 0;
-}
