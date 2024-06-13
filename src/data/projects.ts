@@ -1,4 +1,5 @@
 import type { CoverProject } from "~/types"
+import { Tag } from "./tags"
 
 const IMAGES_BASE_PATH = "/assets/images/projects"
 const COVER_IMAGE_PATH = `${IMAGES_BASE_PATH}/cover`
@@ -58,6 +59,14 @@ export const projects = [
 				url: "https://github.com/dresandev/dreflix",
 			},
 		],
+		tags: [
+			Tag.nextJs14,
+			Tag.cssModules,
+			Tag.typescript,
+			Tag.theMovieDB,
+			Tag.zustand,
+			Tag.movieExplorer,
+		],
 	},
 	{
 		...projectMetadata.vexara,
@@ -75,6 +84,15 @@ export const projects = [
 				label: "Ver código",
 				url: "https://github.com/dresandev/vexara",
 			},
+		],
+		tags: [
+			Tag.mercadopago,
+			Tag.zustand,
+			Tag.prismaOrm,
+			Tag.nextJs14,
+			Tag.authJs,
+			Tag.typescript,
+			Tag.ecommerce,
 		],
 	},
 	{
@@ -97,5 +115,6 @@ export const projects = [
 				url: "https://github.com/dresandev/personal-link-manager",
 			},
 		],
+		tags: [Tag.nextJs14, Tag.typescript, Tag.prismaOrm, Tag.tailwindCss, Tag.authJs],
 	},
 ]

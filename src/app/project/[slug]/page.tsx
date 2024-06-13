@@ -29,54 +29,61 @@ export function generateStaticParams() {
 export default function Project({ params }: Props) {
 	const project = getProjectBySlug(params.slug)!
 
-	const { index, name, description, mobileImages, desktopImages, links } = project
+	const { index, name, description, mobileImages, desktopImages, links, tags } = project
 
 	const [prevProjectSlug, nextProjectSlug] = getPrevAndNextProjectSlug(index)
 
 	return (
 		<>
 			<div className={styles.wrapper}>
-				<section>
-					<h1 className={styles.title}>{name}</h1>
-					<p>{description}</p>
-					<div className={styles.linksWrapper}>
-						{links.map(({ url, label }, index) => (
-							<Link key={index} href={url} target="_blank">
-								{label}
-							</Link>
-						))}
-					</div>
-				</section>
-				<section className={styles.imagesSection}>
-					<div className={styles.imagesWrapper}>
+				<div className={styles.topWrapper}>
+					<section className={styles.detailsSection}>
+						<h1 className={styles.title}>{name}</h1>
+						<p>{description}</p>
+						<div className={styles.tagsWrapper}>
+							{tags.map((tag) => (
+								<span key={tag} className={styles.tagPill}>
+									{tag}
+								</span>
+							))}
+						</div>
+						<div className={styles.linksWrapper}>
+							{links.map(({ url, label }, index) => (
+								<Link key={index} href={url} target="_blank">
+									{label}
+								</Link>
+							))}
+						</div>
+					</section>
+					<section className={styles.mobileImages}>
 						{mobileImages.map((url, index) => (
 							<figure key={index}>
 								<img
 									className={styles.image}
 									src={url}
-									alt={`Captura de pantalla ${++index} en movíl de ${name}`}
+									alt={`Captura de pantalla en móvil #${++index} de ${name}`}
 									width={700}
 									height={1500}
 									loading="eager"
 								/>
 							</figure>
 						))}
-					</div>
-					<div className={styles.imagesWrapper}>
-						{desktopImages.map((url, index) => (
-							<figure key={index}>
-								<img
-									className={styles.image}
-									src={url}
-									alt={`Captura de pantalla ${++index} en escritorio de ${name}`}
-									width={1400}
-									height={787}
-									loading="lazy"
-									decoding="async"
-								/>
-							</figure>
-						))}
-					</div>
+					</section>
+				</div>
+				<section className={styles.desktopImages}>
+					{desktopImages.map((url, index) => (
+						<figure key={index}>
+							<img
+								className={styles.image}
+								src={url}
+								alt={`Captura de pantalla en escritorio #${++index} de ${name}`}
+								width={1400}
+								height={787}
+								loading="lazy"
+								decoding="async"
+							/>
+						</figure>
+					))}
 				</section>
 			</div>
 			<nav className={styles.nav}>

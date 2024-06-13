@@ -1,11 +1,31 @@
 .wrapper {
 	padding-inline: var(--space-inline);
+	padding-block-start: 40px;
 }
 
 .title {
-	padding-block-start: 40px;
-	font-size: 50px;
+	font-size: clamp(50px, 18.448px + 8.414vw, 80px);
 	font-weight: 900;
+}
+
+.tagsWrapper {
+	display: flex;
+	gap: 8px;
+	flex-wrap: wrap;
+	padding-block-start: 20px;
+}
+
+.tagPill {
+	display: inline-flex;
+	padding: 4px 12px;
+	font-size: 14px;
+	background-color: hsl(var(--color-text-hsl) / 0.1);
+	font-weight: 500;
+	border-radius: 1rem;
+}
+
+.detailsSection {
+	padding-block-end: 50px;
 }
 
 .linksWrapper {
@@ -14,16 +34,21 @@
 	padding-block-start: 20px;
 }
 
-.imagesWrapper {
-	display: flex;
-	flex-direction: column;
-	row-gap: 50px;
-	padding-block: 50px;
-}
-
 .image {
 	inline-size: 100%;
 	block-size: auto;
+}
+
+.mobileImages,
+.desktopImages {
+	--items-spacing: 50px;
+	display: flex;
+	flex-direction: column;
+	row-gap: var(--items-spacing);
+}
+
+.mobileImages {
+	padding-block-end: var(--items-spacing);
 }
 
 .nav {
@@ -31,6 +56,7 @@
 	display: flex;
 	column-gap: var(--stroke-width);
 	padding-block-start: var(--stroke-width);
+	margin-block-start: 100px;
 	background-color: var(--color-stroke);
 	transition: background-color 150ms;
 }
@@ -49,10 +75,46 @@
 	content: attr(data-text);
 	position: absolute;
 	color: transparent;
-	-webkit-text-stroke: 1px hsl(var(--color-text-hsl) / 0.7);
+	-webkit-text-stroke: 1px hsl(var(--color-text-hsl) / 0.6);
 	transition: transform 500ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .navLink:hover::before {
 	transform: scale(1.15);
+}
+
+@media screen and (min-width: 768px) {
+	.wrapper {
+		max-inline-size: var(--max-inline-size);
+		margin-inline: auto;
+		padding-block-start: 100px;
+	}
+
+	.topWrapper {
+		display: flex;
+		column-gap: 100px;
+	}
+
+	.detailsSection {
+		flex: 1 0 50%;
+	}
+
+	.imagesSection {
+		flex: 1;
+	}
+
+	.mobileImages,
+	.desktopImages {
+		--items-spacing: 100px;
+	}
+
+	.detailsSection {
+		align-self: flex-start;
+		position: sticky;
+		inset-block-start: calc(var(--header-block-size) + 32px);
+	}
+
+	.nav {
+		margin-block-start: 150px;
+	}
 }
