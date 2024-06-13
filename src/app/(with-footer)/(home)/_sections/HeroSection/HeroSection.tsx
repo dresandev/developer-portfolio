@@ -1,4 +1,4 @@
-import Link from "next/link"
+import NextLink from "next/link"
 import { Button } from "~/components/Ui/Button"
 import { ArrowDown } from "~/components/Svg/ArrowDown"
 import { CopyEmailSmallButton } from "~/components/CopyEmailSmallButton"
@@ -10,9 +10,9 @@ export const HeroSection = () => {
 			<p className={styles.phrase}>
 				El código más limpio es el que no se escribió.{" "}
 				<Button rounded="full" size="small" asChild>
-					<Link href="https://www.linkedin.com/in/dresandev" target="_blank" rel="noopener">
+					<NextLink href="https://www.linkedin.com/in/dresandev" target="_blank" rel="noopener">
 						Disponible para trabajar <span className={styles.availableCircle}></span>
-					</Link>
+					</NextLink>
 				</Button>
 			</p>
 			<h1 className={styles.title}>Dresan, Desarrollador Frontend</h1>
@@ -25,9 +25,9 @@ export const HeroSection = () => {
 					ʕっ•ᴥ•ʔっ Contáctame
 				</Button>
 				<Button className={styles.actionBtn} variant="outlined" asChild>
-					<Link href="/">
+					<NextLink href="/assets/files/Javier-Andres-Frontend-Developer-CV.pdf" target="_blank">
 						Descargar Curriculum <ArrowDown />
-					</Link>
+					</NextLink>
 				</Button>
 				<CopyEmailSmallButton className={styles.copyEmailButton} />
 			</div>
