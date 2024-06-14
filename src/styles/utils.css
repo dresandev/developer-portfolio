@@ -5,5 +5,6 @@
 .section-wrapper {
 	padding: var(--space-block) var(--space-inline);
 	border-block-start: 1px dashed var(--color-stroke);
-	transition: background-color 150ms, border-block-start-color 150ms;
+	transition: background-color var(--theme-transition-duration),
+		border-block-start-color var(--theme-transition-duration);
 }

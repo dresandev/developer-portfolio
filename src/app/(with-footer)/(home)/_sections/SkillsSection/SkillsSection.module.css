@@ -10,7 +10,7 @@
 	margin: 32px auto 0;
 	border: 1px solid var(--color-stroke);
 	overflow: hidden;
-	transition: border-color 150ms;
+	transition: border-color var(--theme-transition-duration);
 }
 
 @media screen and (max-width: 360px) {

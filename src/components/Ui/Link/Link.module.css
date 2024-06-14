@@ -2,7 +2,7 @@
 	display: inline-flex;
 	text-decoration: none;
 	color: var(--color-text-secondary);
-	transition: color 150ms ease;
+	transition: color var(--theme-transition-duration) ease;
 }
 
 .link:hover {

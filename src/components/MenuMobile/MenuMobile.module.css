@@ -9,7 +9,7 @@
 	overflow-y: auto;
 	visibility: hidden;
 	opacity: 0;
-	transition: visibility 300ms, opacity 300ms, background-color 150ms;
+	transition: visibility 300ms, opacity 300ms, background-color var(--theme-transition-duration);
 }
 
 .menu.open {
@@ -50,7 +50,7 @@
 	padding-inline: var(--items-padding);
 	color: var(--color-text-secondary);
 	border-block-start: 1px dashed var(--color-stroke);
-	transition: border-block-start-color 150ms;
+	transition: border-block-start-color var(--theme-transition-duration);
 }
 
 .button {

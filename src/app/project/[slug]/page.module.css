@@ -19,8 +19,8 @@
 	display: inline-flex;
 	padding: 4px 12px;
 	font-size: 14px;
-	background-color: hsl(var(--color-text-hsl) / 0.1);
 	font-weight: 500;
+	background-color: hsl(var(--color-text-hsl) / 0.1);
 	border-radius: 1rem;
 }
 
@@ -58,7 +58,7 @@
 	padding-block-start: var(--stroke-width);
 	margin-block-start: 100px;
 	background-color: var(--color-stroke);
-	transition: background-color 150ms;
+	transition: background-color var(--theme-transition-duration);
 }
 
 .navLink {

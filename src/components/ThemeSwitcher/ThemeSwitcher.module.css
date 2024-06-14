@@ -9,7 +9,7 @@
 	touch-action: manipulation;
 	-webkit-tap-highlight-color: transparent;
 	cursor: pointer;
-	transition: color 150ms ease;
+	transition: color var(--theme-transition-duration) ease;
 }
 
 .button:hover {

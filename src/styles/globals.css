@@ -10,6 +10,7 @@
 	--space-inline: 24px;
 	--space-block: 32px;
 	--max-inline-size: 1400px;
+	--theme-transition-duration: 150ms;
 
 	scrollbar-color: hsl(var(--color-text-hsl) / 0.8) var(--color-background);
 	scrollbar-width: thin;
@@ -66,7 +67,8 @@ body {
 	accent-color: var(--color-primary);
 	color: var(--color-text);
 	background-color: var(--color-background);
-	transition: color 150ms, background-color 150ms;
+	transition: color var(--theme-transition-duration),
+		background-color var(--theme-transition-duration);
 }
 
 h2 {

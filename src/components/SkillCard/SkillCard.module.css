@@ -20,7 +20,7 @@
 	position: absolute;
 	background-color: var(--color-stroke);
 	z-index: 1;
-	transition: background-color 150ms;
+	transition: background-color var(--theme-transition-duration);
 }
 
 .card::after {
@@ -38,7 +38,7 @@
 }
 
 .iconWrapper {
-	transition: color 150ms;
+	transition: color var(--theme-transition-duration);
 }
 
 .card:hover .iconWrapper {

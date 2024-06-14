@@ -7,7 +7,7 @@
 	text-decoration: none;
 	user-select: none;
 	-webkit-tap-highlight-color: transparent;
-	transition: background-color 150ms;
+	transition: background-color var(--theme-transition-duration);
 }
 
 .primary {
