@@ -1,6 +1,7 @@
 import NextLink from "next/link"
 import { Button } from "~/components/Ui/Button"
 import { ArrowDown } from "~/components/Svg/ArrowDown"
+import { ContactDialog } from "~/components/ContactDialog"
 import { CopyEmailSmallButton } from "~/components/CopyEmailSmallButton"
 import styles from "./HeroSection.module.css"
 
@@ -21,9 +22,13 @@ export const HeroSection = () => {
 				<strong>calidad</strong> que merece.
 			</p>
 			<div className={styles.actions}>
-				<Button className={styles.actionBtn} type="button">
-					ʕっ•ᴥ•ʔっ Contáctame
-				</Button>
+				<ContactDialog
+					trigger={
+						<Button className={styles.actionBtn} type="button">
+							ʕっ•ᴥ•ʔっ Contáctame
+						</Button>
+					}
+				/>
 				<Button className={styles.actionBtn} variant="outlined" asChild>
 					<NextLink href="/assets/files/Javier-Andres-Frontend-Developer-CV.pdf" target="_blank">
 						Descargar Curriculum <ArrowDown />

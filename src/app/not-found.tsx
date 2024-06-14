@@ -10,13 +10,13 @@ export const metadata = {
 export default function NotFound() {
 	return (
 		<>
-			<div className={styles.wrapper}>
+			<main className={styles.wrapper}>
 				<h1 className={styles.title}>404</h1>
 				<p className={styles.description}>Página no encontrada ♨︎_♨︎</p>
 				<Button asChild>
 					<Link href="/">Volver al inicio</Link>
 				</Button>
-			</div>
+			</main>
 			<Footer />
 		</>
 	)

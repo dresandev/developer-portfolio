@@ -1,6 +1,5 @@
 .link {
 	display: inline-flex;
-	text-decoration: none;
 	color: var(--color-text-secondary);
 	transition: color var(--theme-transition-duration) ease;
 }

@@ -35,7 +35,7 @@ export default function Project({ params }: Props) {
 
 	return (
 		<>
-			<div className={styles.wrapper}>
+			<main className={styles.wrapper}>
 				<Link href="/">← Volver al inicio</Link>
 				<div className={styles.topWrapper}>
 					<section className={styles.detailsSection}>
@@ -86,7 +86,8 @@ export default function Project({ params }: Props) {
 						</figure>
 					))}
 				</section>
-			</div>
+			</main>
+			<p className={styles.navTitle}>Ver más proyectos</p>
 			<nav className={styles.nav}>
 				<NextLink
 					data-text="Anterior"

@@ -5,6 +5,7 @@ import { ThemeSwitcher } from "~/components/ThemeSwitcher"
 import { Button } from "~/components/Ui/Button"
 import { Link } from "~/components/Ui/Link"
 import { MenuMobile } from "~/components/MenuMobile"
+import { ContactDialog } from "~/components/ContactDialog"
 import styles from "./Header.module.css"
 
 export const Header = () => {
@@ -22,16 +23,20 @@ export const Header = () => {
 							</li>
 						))}
 						<li>
-							<Link href="https://personal-link-manager.vercel.app/" target="_blank">
+							<Link href="https://linkpeek.vercel.app/" target="_blank">
 								Links
 							</Link>
 						</li>
 					</ul>
 				</nav>
 				<div className={styles.optionsWrapper}>
-					<Button size="small" type="button">
-						Contactar
-					</Button>
+					<ContactDialog
+						trigger={
+							<Button size="small" type="button">
+								Contactar
+							</Button>
+						}
+					/>
 					<ThemeSwitcher />
 				</div>
 				<MenuMobile />

@@ -27,8 +27,10 @@ export default function RootLayout({
 			<body className={`${GeistSans.className} ${GeistSans.variable}`}>
 				<ThemeProvider>
 					<SvgMasks />
-					<Header />
-					<main>{children}</main>
+					<div className="__next">
+						<Header />
+						{children}
+					</div>
 				</ThemeProvider>
 			</body>
 		</html>

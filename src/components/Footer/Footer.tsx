@@ -6,8 +6,8 @@ export const Footer = () => {
 	const currentYear = new Date().getFullYear()
 
 	return (
-		<div className={styles.wrapper}>
-			<footer className={styles.footer}>
+		<footer className={styles.footer}>
+			<div className={styles.wrapper}>
 				<span className={styles.year}>ฅʕ´•ᴥ•`ʔฅ - {currentYear}</span>
 				<div className={styles.linksWrapper}>
 					{socialMediaLinks.map(({ url, label }) => (
@@ -16,7 +16,7 @@ export const Footer = () => {
 						</Link>
 					))}
 				</div>
-			</footer>
-		</div>
+			</div>
+		</footer>
 	)
 }

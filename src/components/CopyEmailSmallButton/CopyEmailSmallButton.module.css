@@ -1,7 +1,6 @@
 .button {
 	position: relative;
 	padding-inline: 12px;
-	background-color: transparent;
 	color: var(--color-text-secondary);
 	border-radius: 30px;
 	cursor: copy;

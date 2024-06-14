@@ -25,7 +25,6 @@
 	padding-inline: 0;
 	font-size: clamp(25px, 19.424px + 1.489vw, 48px);
 	text-decoration: underline;
-	background-color: transparent;
 	-webkit-tap-highlight-color: transparent;
 }
 

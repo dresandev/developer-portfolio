@@ -6,6 +6,7 @@ import clsx from "clsx"
 import { toggleBodyOverflow } from "~/utils"
 import { Button } from "~/components/Ui/Button"
 import { ThemeSwitcher } from "~/components/ThemeSwitcher"
+import { ContactDialog } from "~/components/ContactDialog"
 import styles from "./MenuMobile.module.css"
 
 export const MenuMobile = () => {
@@ -47,9 +48,13 @@ export const MenuMobile = () => {
 					</ul>
 				</nav>
 				<div className={styles.optionsWrapper}>
-					<Button className={styles.contactButton} size="medium" type="button">
-						Contactar
-					</Button>
+					<ContactDialog
+						trigger={
+							<Button className={styles.contactButton} size="medium" type="button">
+								Contactar
+							</Button>
+						}
+					/>
 					<div className={styles.themeWrapper}>
 						<span>Tema</span> <ThemeSwitcher />
 					</div>

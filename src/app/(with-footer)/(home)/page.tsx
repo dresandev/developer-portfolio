@@ -6,12 +6,12 @@ import { ContactSection } from "./_sections/ContactSection"
 
 export default function Home() {
 	return (
-		<>
+		<main>
 			<HeroSection />
 			<ProjectsSection />
 			<AboutSection />
 			<SkillsSection />
 			<ContactSection />
-		</>
+		</main>
 	)
 }
