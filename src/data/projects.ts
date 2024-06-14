@@ -46,7 +46,7 @@ export const projects = [
 		...projectMetadata.dreflix,
 		index: 0,
 		description:
-			"Aplicación web para explorar películas, con funcionalidades como infinite scroll, un buscador de películas enfocándose en la navegación por teclado al estilo del buscador de YouTube, un carrusel para promocionar películas con características como autoplay solo cuando esté en el viewport o la pestaña tenga el foco, animaciones al cambiar y mostrar un nuevo ítem, entre otros muchos detalles y funcionalidades. El diseño de la app es una combinación entre el diseño de la aplicación de Amazon Prime Video y Crunchyroll.",
+			"Aplicación web para explorar películas, similar a Amazon Prime Video y Crunchyroll, con funcionalidades como scroll infinito, buscador de películas optimizado para navegación por teclado, similar al de YouTube, y un carrusel para promocionar películas con características como reproducción automática solo cuando esté visible en el viewport o la pestaña tenga el foco, entre otros detalles y funcionalidades.",
 		mobileImages: [`${MOBILE_IMAGE_PATH}/dreflix-1.webp`, `${MOBILE_IMAGE_PATH}/dreflix-2.webp`],
 		desktopImages: [`${DESKTOP_IMAGE_PATH}/dreflix-1.webp`, `${DESKTOP_IMAGE_PATH}/dreflix-2.webp`],
 		links: [
@@ -72,7 +72,7 @@ export const projects = [
 		...projectMetadata.vexara,
 		index: 1,
 		description:
-			"Clon del ecommerce de Bershka implementando las funcionalidades principales como el flujo de autenticación usando auth.js, el flujo de pago de productos usando la pasarela de pagos mercadopago, maquetando la app lo mas similar posible, agregando el responsive sin usar js (que es como se hace originalmente), implementando código 100% funcional en producción.",
+			"Clon del ecommerce de Bershka, implementando funcionalidades principales como el flujo de autenticación con auth.js, el flujo de pago de productos mediante la pasarela de pagos MercadoPago, maquetación de la app con precisión pixel perfect, y diseño responsive sin usar JavaScript (como se hace originalmente). Además, se implementó código funcional en producción.",
 		mobileImages: [`${MOBILE_IMAGE_PATH}/vexara-1.webp`, `${MOBILE_IMAGE_PATH}/vexara-2.webp`],
 		desktopImages: [`${DESKTOP_IMAGE_PATH}/vexara-1.webp`, `${DESKTOP_IMAGE_PATH}/vexara-2.webp`],
 		links: [
@@ -99,7 +99,7 @@ export const projects = [
 		...projectMetadata.linkpeek,
 		index: 2,
 		description:
-			"Aplicación para gestionar enlaces donde se hace un poco de scraping para obtener datos como el título, la descripción y la imagen usada en OGP. Cuenta con un componente para gestionar las etiquetas al estilo del TagsInput de GitHub. El enfoque principal es del lado del servidor, haciendo que la mayoría de las peticiones se realicen en el servidor.",
+			"Aplicación para gestionar enlaces, realizando scraping para obtener datos como el título, la descripción y la imagen usada en el Open Graph Protocol (OGP). Incluye un componente para gestionar etiquetas similar al TagsInput de GitHub. El enfoque principal es del lado del servidor, de manera que la mayoría de las peticiones se realicen en el servidor.",
 		mobileImages: [`${MOBILE_IMAGE_PATH}/linkpeek-1.webp`, `${MOBILE_IMAGE_PATH}/linkpeek-2.webp`],
 		desktopImages: [
 			`${DESKTOP_IMAGE_PATH}/linkpeek-1.webp`,

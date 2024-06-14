@@ -96,6 +96,7 @@
 	}
 
 	.detailsSection {
+		overflow: auto;
 		flex: 1 0 50%;
 		align-self: flex-start;
 		position: sticky;
