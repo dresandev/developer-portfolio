@@ -97,21 +97,15 @@
 
 	.detailsSection {
 		flex: 1 0 50%;
-	}
-
-	.imagesSection {
-		flex: 1;
+		align-self: flex-start;
+		position: sticky;
+		inset-block-start: calc(var(--header-block-size) + 32px);
+		padding-block-end: 100px;
 	}
 
 	.mobileImages,
 	.desktopImages {
 		--items-spacing: 100px;
-	}
-
-	.detailsSection {
-		align-self: flex-start;
-		position: sticky;
-		inset-block-start: calc(var(--header-block-size) + 32px);
 	}
 
 	.nav {

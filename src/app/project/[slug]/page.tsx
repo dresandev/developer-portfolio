@@ -36,6 +36,7 @@ export default function Project({ params }: Props) {
 	return (
 		<>
 			<div className={styles.wrapper}>
+				<Link href="/">← Volver al inicio</Link>
 				<div className={styles.topWrapper}>
 					<section className={styles.detailsSection}>
 						<h1 className={styles.title}>{name}</h1>
