@@ -62,8 +62,8 @@ export default function Project({ params }: Props) {
 									className={styles.image}
 									src={url}
 									alt={`Captura de pantalla en móvil #${++index} de ${name}`}
-									width={700}
-									height={1500}
+									width={600}
+									height={1123}
 									loading="eager"
 								/>
 							</figure>
