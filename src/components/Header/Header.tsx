@@ -1,4 +1,5 @@
 import NextLink from "next/link"
+import { APP_ROUTES } from "~/constants"
 import { DresanLogo } from "~/components/Svg/DresanLogo"
 import { ThemeSwitcher } from "~/components/ThemeSwitcher"
 import { Button } from "~/components/Ui/Button"
@@ -15,9 +16,11 @@ export const Header = () => {
 				</NextLink>
 				<nav className={styles.nav}>
 					<ul className={styles.navList}>
-						<li>
-							<Link href="/">Blog</Link>
-						</li>
+						{APP_ROUTES.map(({ path, label }) => (
+							<li key={path}>
+								<Link href={path}>{label}</Link>
+							</li>
+						))}
 						<li>
 							<Link href="https://personal-link-manager.vercel.app/" target="_blank">
 								Links
