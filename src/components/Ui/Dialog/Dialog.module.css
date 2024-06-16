@@ -14,7 +14,7 @@
 	inset: 0;
 	padding: 25px;
 	margin: auto;
-	inline-size: min(450px, 90vw);
+	inline-size: min(500px, 90vw);
 	block-size: fit-content;
 	max-block-size: 85vh;
 	background-color: var(--color-background);
