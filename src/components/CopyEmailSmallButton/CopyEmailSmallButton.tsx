@@ -7,6 +7,7 @@ import { copyToClipboard } from "~/utils"
 import { useTimeout } from "~/hooks/use-timeout"
 import { CheckIcon } from "~/components/Svg/CheckIcon"
 import { CopyIcon } from "~/components/Svg/CopyIcon"
+import { EmailIcon } from "~/components/Svg/EmailIcon"
 import styles from "./CopyEmailSmallButton.module.css"
 
 const RESET_FEEDBACK_TIME = 2000
@@ -18,9 +19,7 @@ interface Props {
 export const CopyEmailSmallButton: React.FC<Props> = ({ className }) => {
 	const [displayFeedback, setDisplayFeedback] = useState(false)
 
-	const hideFeedback = () => {
-		setDisplayFeedback(false)
-	}
+	const hideFeedback = () => setDisplayFeedback(false)
 
 	useTimeout(hideFeedback, RESET_FEEDBACK_TIME)
 
@@ -31,7 +30,7 @@ export const CopyEmailSmallButton: React.FC<Props> = ({ className }) => {
 
 	return (
 		<button className={clsx(styles.button, className)} onClick={handleOnClick}>
-			<span>✉ {DRESAN_EMAIL}</span>
+			<EmailIcon /> {DRESAN_EMAIL}
 			<CopyIcon className={clsx(styles.icon, { [styles.showIcon]: !displayFeedback })} />
 			<CheckIcon className={clsx(styles.icon, { [styles.showIcon]: displayFeedback })} />
 		</button>

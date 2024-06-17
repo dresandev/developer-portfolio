@@ -12,9 +12,7 @@ const RESET_FEEDBACK_TIME = 5000
 export const CopyEmailButton = () => {
 	const [displayFeedback, setDisplayFeedback] = useState(false)
 
-	const hideFeedback = () => {
-		setDisplayFeedback(false)
-	}
+	const hideFeedback = () => setDisplayFeedback(false)
 
 	useTimeout(hideFeedback, RESET_FEEDBACK_TIME)
 
