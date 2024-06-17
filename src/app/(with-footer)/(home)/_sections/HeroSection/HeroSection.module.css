@@ -32,24 +32,18 @@
 	animation: circle-pulse 2s infinite;
 }
 
-:is(.title, .introSubtitle) {
-	transition: border-color var(--theme-transition-duration);
-}
-
 .title {
+	position: relative;
 	padding: var(--space-inline) 12px;
 	font: 900 clamp(42px, 34.4px + 2.375vw, 80px) / 1 var(--font-geist-sans);
-	background-image: var(--text-gradient);
-	background-clip: text;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	border-block: 1px dashed var(--color-stroke);
 }
 
-.title::selection {
-	background-clip: unset;
-	-webkit-background-clip: unset;
-	-webkit-text-fill-color: initial;
+.title::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	border-block: 1px dashed var(--color-stroke);
+	transition: border-block-color var(--theme-transition-duration);
 }
 
 .introSubtitle {
@@ -57,6 +51,7 @@
 	font-size: clamp(18px, 17.296px + 0.141vw, 20px);
 	color: var(--color-text-secondary);
 	border-block-end: 1px dashed var(--color-stroke);
+	transition: border-block-end-color var(--theme-transition-duration);
 }
 
 .introSubtitle > strong {

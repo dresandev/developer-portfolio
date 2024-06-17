@@ -16,7 +16,7 @@ export const HeroSection = () => {
 					</NextLink>
 				</Button>
 			</p>
-			<h1 className={styles.title}>Dresan, Desarrollador Frontend</h1>
+			<h1 className={`text-gradient ${styles.title}`}>Dresan, Desarrollador Frontend</h1>
 			<p className={styles.introSubtitle}>
 				Hago que tu proyecto <strong>destaque</strong> con la <strong>elegancia</strong> y la{" "}
 				<strong>calidad</strong> que merece.

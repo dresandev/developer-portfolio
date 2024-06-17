@@ -8,3 +8,16 @@
 	transition: background-color var(--theme-transition-duration),
 		border-block-start-color var(--theme-transition-duration);
 }
+
+.text-gradient {
+	background-image: var(--text-gradient);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.text-gradient::selection {
+	background-clip: unset;
+	-webkit-background-clip: unset;
+	-webkit-text-fill-color: initial;
+}
