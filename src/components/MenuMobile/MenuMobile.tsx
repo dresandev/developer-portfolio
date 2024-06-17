@@ -1,11 +1,11 @@
 "use client"
 
 import { useState } from "react"
-import NextLink from "next/link"
 import clsx from "clsx"
 import { APP_ROUTES } from "~/constants"
 import { toggleBodyOverflow } from "~/utils"
 import { useOnPathnameChange } from "~/hooks/use-on-pathname-change"
+import { Link } from "~/components/Ui/Link"
 import { Button } from "~/components/Ui/Button"
 import { ThemeSwitcher } from "~/components/ThemeSwitcher"
 import { ContactDialog } from "~/components/ContactDialog"
@@ -40,9 +40,9 @@ export const MenuMobile = () => {
 					<ul className={styles.navList}>
 						{APP_ROUTES.map(({ href, label, target }) => (
 							<li key={href}>
-								<NextLink className={styles.navLink} href={href} target={target}>
+								<Link className={styles.navLink} href={href} target={target}>
 									{label}
-								</NextLink>
+								</Link>
 							</li>
 						))}
 					</ul>
