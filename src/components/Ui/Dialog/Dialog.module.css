@@ -30,6 +30,10 @@
 	animation: content-hide 200ms cubic-bezier(0.42, 0, 0.58, 1);
 }
 
+.content:focus-visible {
+	outline: none;
+}
+
 .close {
 	--size: 20px;
 	display: grid;

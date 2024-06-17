@@ -4,7 +4,12 @@ export const FORMSPREE_URL = "https://formspree.io/f"
 
 export const APP_ROUTES = [
 	{
-		path: "/blog",
+		href: "/blog",
 		label: "Blog",
+	},
+	{
+		href: "https://linkpeek.vercel.app/",
+		label: "Links",
+		target: "_blank",
 	},
 ]

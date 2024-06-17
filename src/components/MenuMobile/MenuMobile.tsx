@@ -1,9 +1,11 @@
 "use client"
 
 import { useState } from "react"
-import Link from "next/link"
+import NextLink from "next/link"
 import clsx from "clsx"
+import { APP_ROUTES } from "~/constants"
 import { toggleBodyOverflow } from "~/utils"
+import { useOnPathnameChange } from "~/hooks/use-on-pathname-change"
 import { Button } from "~/components/Ui/Button"
 import { ThemeSwitcher } from "~/components/ThemeSwitcher"
 import { ContactDialog } from "~/components/ContactDialog"
@@ -11,6 +13,11 @@ import styles from "./MenuMobile.module.css"
 
 export const MenuMobile = () => {
 	const [open, setOpen] = useState(false)
+
+	useOnPathnameChange(() => {
+		setOpen(false)
+		toggleBodyOverflow(false)
+	})
 
 	const handleOnClick = () => {
 		setOpen(!open)
@@ -31,20 +38,13 @@ export const MenuMobile = () => {
 			<div className={clsx(styles.menu, { [styles.open]: open })}>
 				<nav className={styles.nav}>
 					<ul className={styles.navList}>
-						<li>
-							<Link className={styles.navLink} href="/">
-								Blog
-							</Link>
-						</li>
-						<li>
-							<Link
-								className={styles.navLink}
-								href="https://personal-link-manager.vercel.app/"
-								target="_blank"
-							>
-								Links útiles
-							</Link>
-						</li>
+						{APP_ROUTES.map(({ href, label, target }) => (
+							<li key={href}>
+								<NextLink className={styles.navLink} href={href} target={target}>
+									{label}
+								</NextLink>
+							</li>
+						))}
 					</ul>
 				</nav>
 				<div className={styles.optionsWrapper}>

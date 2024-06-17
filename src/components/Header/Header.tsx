@@ -17,16 +17,13 @@ export const Header = () => {
 				</NextLink>
 				<nav className={styles.nav}>
 					<ul className={styles.navList}>
-						{APP_ROUTES.map(({ path, label }) => (
-							<li key={path}>
-								<Link href={path}>{label}</Link>
+						{APP_ROUTES.map(({ href, label, target }) => (
+							<li key={href}>
+								<Link href={href} target={target}>
+									{label}
+								</Link>
 							</li>
 						))}
-						<li>
-							<Link href="https://linkpeek.vercel.app/" target="_blank">
-								Links
-							</Link>
-						</li>
 					</ul>
 				</nav>
 				<div className={styles.optionsWrapper}>

@@ -30,7 +30,11 @@ export const HeroSection = () => {
 					}
 				/>
 				<Button className={styles.actionBtn} variant="outlined" asChild>
-					<NextLink href="/assets/files/Javier-Andres-Frontend-Developer-CV.pdf" target="_blank">
+					<NextLink
+						href="/assets/files/Javier-Andres-Frontend-Developer-CV.pdf"
+						target="_blank"
+						prefetch={false}
+					>
 						Descargar Curriculum <ArrowDown />
 					</NextLink>
 				</Button>
