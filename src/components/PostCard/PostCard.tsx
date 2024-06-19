@@ -1,14 +1,10 @@
+import type { Post } from "~/types"
 import NextLink from "next/link"
-import styles from "./ArticleCard.module.css"
+import styles from "./PostCard.module.css"
 
-interface Props {
-	slug: string
-	title: string
-	description: string
-	emoji: string
-}
+interface Props extends Post {}
 
-export const ArticleCard: React.FC<Props> = ({ slug, title, description, emoji }) => {
+export const PostCard: React.FC<Props> = ({ slug, title, description, emoji }) => {
 	const href = `/blog/${slug}`
 
 	return (

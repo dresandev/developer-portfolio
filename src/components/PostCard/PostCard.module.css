@@ -2,6 +2,7 @@
 	position: relative;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	flex-wrap: wrap-reverse;
 	gap: 12px 24px;
 	padding: 24px;
@@ -31,9 +32,9 @@
 
 .emoji {
 	font-size: 55px;
-	transition: transform 150ms;
+	transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card:hover .emoji {
-	transform: scale(1.1);
+	transform: scale(1.15);
 }
