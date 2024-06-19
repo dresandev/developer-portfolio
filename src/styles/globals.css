@@ -11,6 +11,10 @@
 	--space-block: 32px;
 	--max-inline-size: 1400px;
 	--theme-transition-duration: 150ms;
+	--safe-space: 5px;
+	--max-content-block-size: calc(
+		100dvh - var(--header-block-size) - var(--footer-block-size) - var(--safe-space)
+	);
 
 	scrollbar-color: hsl(var(--color-text-hsl) / 0.8) var(--color-background);
 	scrollbar-width: thin;
