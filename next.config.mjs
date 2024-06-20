@@ -9,7 +9,12 @@ const nextConfig = {
 const withMDX = createMDX({
   options: {
     remarkPlugins: [],
-    rehypePlugins: [[rehypeShiki, { theme: "aurora-x" }]],
+    rehypePlugins: [[rehypeShiki, {
+      themes: {
+        light: "catppuccin-latte",
+        dark: "vitesse-dark",
+      }
+    }]],
   },
 })
 

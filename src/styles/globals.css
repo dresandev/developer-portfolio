@@ -16,26 +16,26 @@
 		100dvh - var(--header-block-size) - var(--footer-block-size) - var(--safe-space)
 	);
 
-	scrollbar-color: hsl(var(--color-text-hsl) / 0.8) var(--color-background);
-	scrollbar-width: thin;
 	font-size: 16px;
 }
 
 [data-theme="light"] {
-	--color-background-hsl: 0 0% 93%;
+	--color-background-hsl: 0 0% 99%;
 	--color-text-hsl: 0 0% 1%;
 	--color-stroke-hsl: 0 3% 84%;
 
 	--color-primary: hsl(212 100% 48%);
 	--color-text: hsl(0 0% 1%);
 	--color-text-secondary: hsl(0 0% 40%);
-	--color-background: hsl(0 0% 93%);
-	--color-themed-background: hsl(0 0% 93%);
+	--color-background: hsl(0 0% 99%);
+	--color-themed-background: hsl(0 0% 99%);
 	--color-background-secondary: hsl(10 0% 85%);
 	--color-stroke: hsl(0 2% 76%);
-	--color-themed-stroke: hsla(0 0 0 / 0.08);
+	--color-themed-stroke: hsla(0 0 0 / 0.14);
 
 	--text-gradient: linear-gradient(180deg, hsl(0 0% 33%), hsl(0 0% 0%));
+
+	color-scheme: light;
 }
 
 [data-theme="dark"] {
@@ -53,6 +53,14 @@
 	--color-themed-stroke: hsl(0 0% 100% / 0.14);
 
 	--text-gradient: linear-gradient(180deg, hsl(0 0% 100%), hsl(0 0% 68%));
+
+	color-scheme: dark;
+}
+
+[data-theme="dark"] .shiki,
+[data-theme="dark"] .shiki span {
+	color: var(--shiki-dark) !important;
+	background-color: var(--shiki-dark-bg) !important;
 }
 
 ::selection {
@@ -89,6 +97,21 @@ a {
 
 .__next {
 	isolation: isolate;
+}
+
+@media (hover: hover) {
+	::-webkit-scrollbar {
+		width: 12px;
+		height: 12px;
+		background-color: hsl(220, 22%, 94%);
+		background-color: var(--color-background-secondary);
+	}
+
+	::-webkit-scrollbar-thumb {
+		border-radius: 5px;
+		background-color: hsl(223, 15%, 18%);
+		border: 2px solid hsl(220, 22%, 94%);
+	}
 }
 
 @media screen and (min-width: 768px) {

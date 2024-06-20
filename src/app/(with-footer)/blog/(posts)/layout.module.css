@@ -1,4 +1,19 @@
 .article {
 	max-inline-size: 775px;
 	margin-inline: auto;
+	padding-inline: var(--space-inline);
+	font-size: 19px;
+}
+
+.article h1 {
+	font-size: 38px;
+}
+
+.article pre {
+	max-block-size: 75dvh;
+	padding: 24px;
+	margin-block: 40px;
+	border-radius: 6px;
+	overflow-x: auto;
+	font-size: 16px;
 }
