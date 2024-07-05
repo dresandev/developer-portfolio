@@ -12,7 +12,7 @@ const withMDX = createMDX({
     rehypePlugins: [[rehypeShiki, {
       themes: {
         light: "catppuccin-latte",
-        dark: "vitesse-dark",
+        dark: "github-dark",
       }
     }]],
   },

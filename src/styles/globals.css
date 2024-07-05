@@ -101,16 +101,20 @@ a {
 
 @media (hover: hover) {
 	::-webkit-scrollbar {
-		width: 12px;
-		height: 12px;
-		background-color: hsl(220, 22%, 94%);
-		background-color: var(--color-background-secondary);
+		--size: 12px;
+		inline-size: var(--size);
+		block-size: var(--size);
 	}
 
 	::-webkit-scrollbar-thumb {
+		background-color: var(--color-text);
+		background-clip: content-box;
 		border-radius: 5px;
-		background-color: hsl(223, 15%, 18%);
-		border: 2px solid hsl(220, 22%, 94%);
+		border: 2px solid transparent;
+	}
+
+	::-webkit-scrollbar-corner {
+		display: none;
 	}
 }
 

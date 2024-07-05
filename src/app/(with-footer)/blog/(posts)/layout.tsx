@@ -7,7 +7,10 @@ export default function PostsLayout({
 }>) {
 	return (
 		<main>
-			<article className={styles.article}>{children}</article>
+			<article className={styles.article}>
+				{children}
+				<div className={styles.greetings}>Gracias por leer, recuerda tomar agüita 💙</div>
+			</article>
 		</main>
 	)
 }

@@ -3,6 +3,11 @@ import { sortPostsByDate } from "~/helpers/sort-posts"
 import { PostCard } from "~/components/PostCard"
 import styles from "./page.module.css"
 
+export const metadata = {
+	title: "Dresan - Blog",
+	description: "Tutoriales simples sobre desarrollo web, enfocados mayormente en React.",
+}
+
 export default async function Blog() {
 	const posts = await getPosts()
 	const sortedPosts = sortPostsByDate({ posts })

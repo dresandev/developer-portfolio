@@ -1,0 +1,22 @@
+.wrapper {
+	padding-block: 32px 64px;
+}
+
+.goHomeLink {
+	font-size: 16px;
+}
+
+.title {
+	padding-block-start: 32px;
+	font-size: 40px;
+}
+
+.date {
+	color: var(--color-text-secondary);
+}
+
+@media screen and (max-width: 768px) {
+	.title {
+		font-size: 32px;
+	}
+}
