@@ -87,7 +87,6 @@ export default function Project({ params }: Props) {
 					))}
 				</section>
 			</main>
-			<p className={styles.navTitle}>Ver más proyectos</p>
 			<nav className={styles.nav}>
 				<NextLink
 					data-text="Anterior"

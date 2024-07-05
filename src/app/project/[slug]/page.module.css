@@ -51,21 +51,12 @@
 	padding-block-end: var(--items-spacing);
 }
 
-.navTitle {
-	padding-block: 12px;
-	margin-block-start: 100px;
-	font-size: clamp(24px, 20.608px + 0.906vw, 38px);
-	font-weight: 700;
-	text-align: center;
-	border-block-start: 1px solid var(--color-stroke);
-	transition: border-block-start var(--theme-transition-duration);
-}
-
 .nav {
 	--stroke-width: 1px;
 	display: flex;
 	column-gap: var(--stroke-width);
 	padding-block-start: var(--stroke-width);
+	margin-block-start: 100px;
 	background-color: var(--color-stroke);
 	transition: background-color var(--theme-transition-duration);
 }
@@ -118,7 +109,7 @@
 		--items-spacing: 100px;
 	}
 
-	.navTitle {
+	.nav {
 		margin-block-start: 150px;
 	}
 }
