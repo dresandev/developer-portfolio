@@ -10,7 +10,7 @@ export const ContactDialog: React.FC<Props> = ({ trigger }) => {
 		<Dialog>
 			<DialogTrigger asChild>{trigger}</DialogTrigger>
 			<DialogContent>
-				<DialogTitle>Contáctame</DialogTitle>
+				<DialogTitle>Contactar</DialogTitle>
 				<ContactForm />
 			</DialogContent>
 		</Dialog>
