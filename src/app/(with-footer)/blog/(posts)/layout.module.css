@@ -19,6 +19,10 @@
 	margin-block: 64px 32px;
 }
 
+.article h3 {
+	margin-block: 64px 12px;
+}
+
 .greetings {
 	padding-block: 24px;
 	font-size: 20px;

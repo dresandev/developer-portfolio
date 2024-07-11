@@ -16,6 +16,10 @@
 }
 
 @media screen and (max-width: 768px) {
+	.wrapper {
+		padding-block-end: 48px;
+	}
+
 	.title {
 		font-size: 32px;
 	}

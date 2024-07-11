@@ -3,14 +3,12 @@ import { localFormatDate } from "~/helpers/local-format-date"
 export const metadata = {
 	title: "Cómo Configurar una Aplicación de React con Styled Components",
 	description: "Cómo configurar una aplicación de React utilizando Styled Components",
-	publishedOn: "July 2, 2024",
-	lastModified: "July 2, 2024",
-	emoji: "🦄",
+	publishedOn: "July 12, 2024",
+	lastModified: "July 12, 2024",
+	emoji: "🎨",
 }
 
-# Cómo Configurar una Aplicación de React con Styled Components
-
-{localFormatDate(metadata.publishedOn)}
+<ArticleHeader title={metadata.title} date={metadata.publishedOn} />
 
 En esta guía, aprenderás cómo configurar una aplicación de React utilizando Styled Components, una biblioteca popular que permite escribir estilos CSS dentro de tus componentes de React. Esta combinación te permitirá crear componentes reutilizables y estilos más mantenibles para tu proyecto.
 
@@ -29,11 +27,9 @@ Dentro del directorio de tu aplicación, instala Styled Components mediante npm 
 
 ```bash
 npm install styled-components
-```
 
-O
+// ó
 
-```bash
 yarn add styled-components
 ```
 
