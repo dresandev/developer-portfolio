@@ -23,6 +23,26 @@
 	margin-block: 64px 12px;
 }
 
+.article p {
+	margin-block-end: 18px;
+}
+
+.article img {
+	block-size: auto;
+	margin-block: 32px 48px;
+	margin-inline: auto;
+	border-radius: 5px;
+}
+
+.article ul,
+.article ol {
+	margin-block-end: 32px;
+}
+
+.article ul {
+	list-style: "⟡  ";
+}
+
 .greetings {
 	padding-block: 24px;
 	font-size: 20px;
