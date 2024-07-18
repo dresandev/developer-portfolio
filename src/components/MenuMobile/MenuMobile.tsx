@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import clsx from "clsx"
-import { APP_ROUTES } from "~/constants"
+import { HEADER_LINKS } from "~/constants"
 import { toggleBodyOverflow } from "~/utils"
 import { useOnPathnameChange } from "~/hooks/use-on-pathname-change"
 import { Link } from "~/components/Ui/Link"
@@ -38,7 +38,7 @@ export const MenuMobile = () => {
 			<div className={clsx(styles.menu, { [styles.open]: open })}>
 				<nav className={styles.nav}>
 					<ul className={styles.navList}>
-						{APP_ROUTES.map(({ href, label, target }) => (
+						{HEADER_LINKS.map(({ href, label, target }) => (
 							<li key={href}>
 								<Link className={styles.navLink} href={href} target={target}>
 									{label}

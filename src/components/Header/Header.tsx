@@ -1,5 +1,5 @@
 import NextLink from "next/link"
-import { APP_ROUTES } from "~/constants"
+import { HEADER_LINKS } from "~/constants"
 import { DresanLogo } from "~/components/Svg/DresanLogo"
 import { ThemeSwitcher } from "~/components/ThemeSwitcher"
 import { Button } from "~/components/Ui/Button"
@@ -17,7 +17,7 @@ export const Header = () => {
 				</NextLink>
 				<nav className={styles.nav}>
 					<ul className={styles.navList}>
-						{APP_ROUTES.map(({ href, label, target }) => (
+						{HEADER_LINKS.map(({ label, href, target }) => (
 							<li key={href}>
 								<Link href={href} target={target}>
 									{label}
