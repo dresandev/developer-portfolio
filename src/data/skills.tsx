@@ -17,7 +17,7 @@ export const skills = [
 	{
 		name: "React",
 		icon: <ReactJsLogo />,
-		brandColor: "hsl(192.85714285714286, 95.06172839506173%, 68.23529411764706%)",
+		brandColor: "#61dafb",
 	},
 	{
 		name: "Next.js",
