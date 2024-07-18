@@ -108,11 +108,11 @@ export const projects = [
 		links: [
 			{
 				label: "Visitar sitio",
-				url: "https://personal-link-manager.vercel.app",
+				url: "https://linkpeek.vercel.app",
 			},
 			{
 				label: "Ver código",
-				url: "https://github.com/dresandev/personal-link-manager",
+				url: "https://github.com/dresandev/linkpeek",
 			},
 		],
 		tags: [Tag.nextJs14, Tag.typescript, Tag.prismaOrm, Tag.tailwindCss, Tag.authJs],
