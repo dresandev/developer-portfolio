@@ -2,7 +2,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 0 4px;
+	column-gap: 4px;
 	font-weight: 500;
 	text-decoration: none;
 	user-select: none;
@@ -55,19 +55,19 @@
 }
 
 .large {
-	block-size: 48px;
+	min-block-size: 48px;
 	padding-inline: 14px;
 	font-size: 16px;
 }
 
 .medium {
-	block-size: 40px;
+	min-block-size: 40px;
 	padding-inline: 16px;
 	font-size: 14px;
 }
 
 .small {
-	block-size: 32px;
+	min-block-size: 32px;
 	padding-inline: 12px;
 	font-size: 14px;
 }

@@ -1,14 +1,18 @@
 .wrapper {
 	max-inline-size: 800px;
 	min-block-size: var(--max-content-block-size);
-	margin-inline: auto;
 	padding-inline: var(--space-inline);
+	margin-inline: auto;
 }
 
 .title {
-	text-align: center;
-	font-size: 44px;
 	padding-block: 32px;
+	font-size: 44px;
+}
+
+.title,
+.disclaimer {
+	text-align: center;
 }
 
 .postsWrapper {
