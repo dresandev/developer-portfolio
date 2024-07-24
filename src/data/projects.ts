@@ -99,7 +99,7 @@ export const projects = [
 		...projectMetadata.linkpeek,
 		index: 2,
 		description:
-			"Aplicación para gestionar enlaces, realizando scraping para obtener datos como el título, la descripción y la imagen usada en el Open Graph Protocol (OGP). Incluye un componente para gestionar etiquetas similar al TagsInput de GitHub. El enfoque principal es del lado del servidor, de manera que la mayoría de las peticiones se realicen en el servidor.",
+			"Aplicación para gestionar enlaces, realizando scraping para obtener datos como el título, descripción e imagen usada en el Open Graph Protocol (OGP). Incluye un componente para agregar etiquetas similar al TagsInput de GitHub. El enfoque principal es del lado del servidor, de manera que la mayoría del trabajo se realiza en el servidor.",
 		mobileImages: [`${MOBILE_IMAGE_PATH}/linkpeek-1.webp`, `${MOBILE_IMAGE_PATH}/linkpeek-2.webp`],
 		desktopImages: [
 			`${DESKTOP_IMAGE_PATH}/linkpeek-1.webp`,
