@@ -12,7 +12,7 @@ interface Props {
 export function generateMetadata({ params }: Props) {
 	const project = getProjectBySlug(params.slug)
 
-	if (!project) notFound()
+	if (!project) return
 
 	return {
 		title: `Dresan - Proyecto | ${project.name}`,
@@ -27,7 +27,9 @@ export function generateStaticParams() {
 }
 
 export default function Project({ params }: Props) {
-	const project = getProjectBySlug(params.slug)!
+	const project = getProjectBySlug(params.slug)
+
+	if (!project) notFound()
 
 	const { index, name, description, mobileImages, desktopImages, links, tags } = project
 
