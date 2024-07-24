@@ -5,8 +5,7 @@ import { sendEmail } from "~/actions/send-message"
 import { useTimeout } from "~/hooks/use-timeout"
 import { Button } from "~/components/Ui/Button"
 import { Label } from "~/components/Ui/Label"
-import { Input } from "~/components/Ui/Input"
-import { Textarea } from "~/components/Ui/TextArea"
+import { TextField } from "~/components/Ui/TextField"
 import { MessageCard } from "~/components/MessageCard"
 import styles from "./ContactForm.module.css"
 
@@ -42,11 +41,11 @@ export const ContactForm = () => {
 		<form ref={formRef} className={styles.form} action={formAction}>
 			<Label>
 				<span className={styles.labelWrapper}>Nombre</span>
-				<Input placeholder="Pepito Perez Pepian" name="name" autoComplete="name" required />
+				<TextField placeholder="Pepito Perez Pepian" name="name" autoComplete="name" required />
 			</Label>
 			<Label>
 				<span className={styles.labelWrapper}>Correo</span>
-				<Input
+				<TextField
 					placeholder="pepito@perez.com"
 					type="email"
 					name="email"
@@ -56,7 +55,12 @@ export const ContactForm = () => {
 			</Label>
 			<Label>
 				<span className={styles.labelWrapper}>Mensaje</span>
-				<Textarea placeholder="Hola Dresan, (Tu increíble mensaje)" name="message" required />
+				<TextField
+					multiline
+					placeholder="Hola Dresan, (Tu increíble mensaje)"
+					name="message"
+					required
+				/>
 			</Label>
 			<Button disabled={isPending} size="medium">
 				Enviar
