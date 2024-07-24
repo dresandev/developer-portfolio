@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 	metadataBase: new URL(HOST_URL),
 	title: "Dresan - Frontend developer",
 	description:
-		"Web personal de Dresan, donde encontrarás mi portafolio, habilidades, información de contacto y blog. Explora mi trabajo y contáctame si tienes un proyecto en mente.",
+		"Soy Dresan y aqui encontrarás mi portafolio, habilidades, información de contacto y blog. Explora mi trabajo y contáctame si tienes un proyecto en mente.",
 	authors: [{ name: "Javier Andres - Dresan" }],
 	creator: "Javier Andres - Dresan",
 }
