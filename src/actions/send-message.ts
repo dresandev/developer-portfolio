@@ -1,6 +1,5 @@
 "use server"
 
-import { revalidatePath } from "next/cache"
 import { FORMSPREE_URL } from "~/constants"
 
 interface FormDataValues {
