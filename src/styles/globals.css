@@ -13,7 +13,7 @@
 	--theme-transition-duration: 150ms;
 	--safe-space: 5px;
 	--max-content-block-size: calc(
-		100dvh - var(--header-block-size) - var(--footer-block-size) - var(--safe-space)
+		100vh - var(--header-block-size) - var(--footer-block-size) - var(--safe-space)
 	);
 
 	font-size: 16px;
@@ -121,7 +121,7 @@ a {
 @media screen and (min-width: 768px) {
 	:root {
 		--space-inline: 32px;
-		--space-block: 90px;
+		--space-block: 100px;
 	}
 
 	h2 {

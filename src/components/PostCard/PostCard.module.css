@@ -20,6 +20,7 @@
 	inset: 0;
 	z-index: 1;
 	border-radius: 12px;
+	-webkit-tap-highlight-color: transparent;
 }
 
 .infoWrapper {
