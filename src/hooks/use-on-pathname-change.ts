@@ -6,5 +6,5 @@ export const useOnPathnameChange = (callback: () => void) => {
 
 	useEffect(() => {
 		callback()
-	}, [pathname])
+	}, [pathname, callback])
 }
