@@ -1,6 +1,6 @@
 # Web personal
 
-Mi Web personal, donde encontrarás mi portafolio, habilidades, información de contacto y blog. Explora mi trabajo y contáctame si tienes un proyecto en mente.
+Soy Dresan y aqui encontrarás mi portafolio, habilidades, información de contacto y blog. Explora mi trabajo y contáctame si tienes un proyecto en mente.
 
 ## Screenshots
 
