@@ -6,5 +6,6 @@ export const useOnPathnameChange = (callback: () => void) => {
 
 	useEffect(() => {
 		callback()
-	}, [pathname, callback])
+		// eslint-disable-next-line react-hooks/exhaustive-deps
+	}, [pathname])
 }
