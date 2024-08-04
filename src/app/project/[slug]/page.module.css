@@ -30,13 +30,16 @@
 
 .linksWrapper {
 	display: flex;
-	column-gap: 16px;
+	flex-wrap: wrap;
+	gap: 16px;
 	padding-block-start: 20px;
 }
 
 .image {
 	inline-size: 100%;
 	block-size: auto;
+	border: 1px solid var(--color-stroke);
+	transition: border-color var(--theme-transition-duration);
 }
 
 .mobileImages,

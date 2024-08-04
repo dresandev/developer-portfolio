@@ -1,5 +1,5 @@
 {
-	"extends": "next/core-web-vitals",
+	"extends": ["eslint-config-prettier", "next/core-web-vitals"],
 	"rules": {
 		"semi": ["warn", "never"],
 		"jsx-quotes": ["warn", "prefer-double"],
