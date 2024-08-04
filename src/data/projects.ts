@@ -19,6 +19,10 @@ export const projectMetadata = {
 		slug: "linkpeek",
 		name: "Linkpeek",
 	},
+	dree: {
+		slug: "dree",
+		name: "Dree",
+	},
 }
 
 export const coverProjects: CoverProject[] = [
@@ -38,6 +42,11 @@ export const coverProjects: CoverProject[] = [
 		imageUrl: `${COVER_IMAGE_PATH}/linkpeek.webp`,
 		description:
 			"App para la gestión de links, haciendo scraping para la obtención de la información de la web.",
+	},
+	{
+		...projectMetadata.dree,
+		imageUrl: `${COVER_IMAGE_PATH}/dree.webp`,
+		description: "Herramienta para generar diagramas de texto sobre estructuras de directorios y archivos 📁.",
 	},
 ]
 
@@ -115,6 +124,30 @@ export const projects = [
 				url: "https://github.com/dresandev/linkpeek",
 			},
 		],
-		tags: [Tag.nextJs14, Tag.typescript, Tag.prismaOrm, Tag.tailwindCss, Tag.authJs],
+		tags: [Tag.nextJs14, Tag.typescript, Tag.prismaOrm, Tag.tailwindCss, Tag.authJs, Tag.tool],
+	},
+	{
+		...projectMetadata.dree,
+		index: 3,
+		description: "Herramienta para generar diagramas de texto sobre estructuras de directorios y archivos, basado en el proyecto de Nathan Friend: https://tree.nathanfriend.io/.",
+		mobileImages: [`${MOBILE_IMAGE_PATH}/dree-1.webp`],
+		desktopImages: [
+			`${DESKTOP_IMAGE_PATH}/dree-1.webp`
+		],
+		links: [
+			{
+				label: "Visitar sitio",
+				url: "https://dree.vercel.app",
+			},
+			{
+				label: "Ver código",
+				url: "https://github.com/dresandev/dree",
+			},
+			{
+				label: "Ver proyecto de Nathan Friend",
+				url: "https://tree.nathanfriend.io/",
+			},
+		],
+		tags: [Tag.nextJs14, Tag.zustand, Tag.cssModules, Tag.typescript, Tag.tool],
 	},
 ]

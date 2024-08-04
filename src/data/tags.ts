@@ -10,4 +10,5 @@ export const Tag = {
 	movieExplorer: "Movie Explorer",
 	ecommerce: "Ecommerce",
 	tailwindCss: "Tailwind CSS",
+	tool: "Tool",
 }
