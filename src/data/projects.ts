@@ -137,7 +137,7 @@ export const projects = [
 		links: [
 			{
 				label: "Visitar sitio",
-				url: "https://dree.vercel.app",
+				url: "https://dreee.vercel.app",
 			},
 			{
 				label: "Ver código",
