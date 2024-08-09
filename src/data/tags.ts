@@ -11,4 +11,6 @@ export const Tag = {
 	ecommerce: "Ecommerce",
 	tailwindCss: "Tailwind CSS",
 	tool: "Tool",
+	jest: "Jest",
+	reactTestingLibrary: "React Testing Library"
 }

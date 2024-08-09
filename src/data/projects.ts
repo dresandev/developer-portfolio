@@ -148,6 +148,6 @@ export const projects = [
 				url: "https://tree.nathanfriend.io/",
 			},
 		],
-		tags: [Tag.nextJs14, Tag.zustand, Tag.cssModules, Tag.typescript, Tag.tool],
+		tags: [Tag.nextJs14, Tag.zustand, Tag.cssModules, Tag.typescript, Tag.tool, Tag.jest, Tag.reactTestingLibrary],
 	},
 ]
