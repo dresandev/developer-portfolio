@@ -12,8 +12,8 @@
 }
 
 .textarea {
-	min-block-size: 100px;
-	max-block-size: 400px;
+	min-block-size: calc(34px + 6lh);
+	max-block-size: calc(34px + 15lh);
 	resize: vertical;
 }
 
