@@ -41,7 +41,7 @@ export const coverProjects: CoverProject[] = [
 		...projectMetadata.linkpeek,
 		imageUrl: `${COVER_IMAGE_PATH}/linkpeek.webp`,
 		description:
-			"App para la gestión de links, haciendo scraping para la obtención de la información de la web.",
+			"App para gestionar links, haciendo scraping para la obtención de información de las webs.",
 	},
 	{
 		...projectMetadata.dree,
