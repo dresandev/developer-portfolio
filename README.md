@@ -4,4 +4,4 @@ Soy Dresan y aqui encontrarás mi portafolio, habilidades, información de conta
 
 ## Screenshots
 
-![1](https://github.com/dresandev/dresan.dev/assets/79766563/d0df7f2d-5d65-4fef-84a6-0e2a0805fd23)
+![image](https://github.com/user-attachments/assets/1c89f4da-f9e4-455c-8d5d-61dea65a6a94)
