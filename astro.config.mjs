@@ -1,11 +1,22 @@
 // @ts-check
 import vercel from "@astrojs/vercel"
 import { defineConfig, envField } from "astro/config"
+import sitemap from "@astrojs/sitemap"
 
 export default defineConfig({
-  site: "https://www.dresan.dev/",
-  output: "server",
+  site: "https://www.dresan.dev",
   adapter: vercel(),
+  integrations: [
+    sitemap({
+      i18n: {
+        defaultLocale: "es",
+        locales: {
+          es: "es-CO",
+          en: "en-US",
+        },
+      },
+    }),
+  ],
   redirects: {
     "/": {
       status: 301,
