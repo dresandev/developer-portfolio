@@ -1,5 +1,5 @@
 import { defineMiddleware } from "astro/middleware"
-import { SUPPORTED_LOCALES } from "@/i18n/ui"
+import { SUPPORTED_LOCALES, type Locale } from "@/i18n/ui"
 import { isMiddlewareExcluded } from "@/utils/is-middleware-excluded"
 
 export const onRequest = defineMiddleware((context, next) => {
@@ -11,7 +11,7 @@ export const onRequest = defineMiddleware((context, next) => {
 
   if (!locale) return next()
 
-  if (!SUPPORTED_LOCALES.includes(locale)) {
+  if (!SUPPORTED_LOCALES.includes(locale as Locale)) {
     return context.rewrite("/es/404")
   }
 
