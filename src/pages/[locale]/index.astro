@@ -1,10 +1,17 @@
 ---
+import { SUPPORTED_LOCALES } from "@/i18n/ui"
 import { getLangFromUrl, useTranslations } from "@/i18n/utils"
 import Layout from "@/layouts/layout.astro"
 import HeroSection from "@/sections/hero-section.astro"
 import ProjectsSection from "@/sections/projects-section.astro"
 import AboutMeSection from "@/sections/about-me-section.astro"
 import ContactSection from "@/sections/contact-section.astro"
+
+export function getStaticPaths() {
+  return SUPPORTED_LOCALES.map((locale) => ({
+    params: { locale },
+  }))
+}
 
 const locale = getLangFromUrl(Astro.url)
 const t = useTranslations(locale)
