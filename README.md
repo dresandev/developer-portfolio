@@ -18,9 +18,6 @@ To run this project, you will need to add the following environment variables to
 
 `HOST_URL`
 `FORM_ID`
-`SPOTIFY_REFRESH_TOKEN`
-`SPOTIFY_CLIENT_ID`
-`SPOTIFY_CLIENT_SECRET`
 
 ## Run development server
 

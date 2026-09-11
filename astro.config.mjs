@@ -23,9 +23,6 @@ export default defineConfig({
     schema: {
       HOST_URL: envField.string({ context: "client", access: "public" }),
       FORM_ID: envField.string({ context: "client", access: "public" }),
-      SPOTIFY_REFRESH_TOKEN: envField.string({ context: "server", access: "secret" }),
-      SPOTIFY_CLIENT_ID: envField.string({ context: "server", access: "secret" }),
-      SPOTIFY_CLIENT_SECRET: envField.string({ context: "server", access: "secret" }),
     },
   },
 })
