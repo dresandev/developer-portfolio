@@ -1,11 +1,9 @@
 // @ts-check
-import vercel from "@astrojs/vercel"
 import { defineConfig, envField } from "astro/config"
 import sitemap from "@astrojs/sitemap"
 
 export default defineConfig({
   site: "https://www.dresan.dev",
-  adapter: vercel(),
   integrations: [
     sitemap({
       i18n: {

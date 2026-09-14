@@ -1,3 +1,5 @@
 ---
-// Required by Astro to redirect to the correct locale
+import { DEFAULT_LOCALE } from "@/i18n/ui"
 ---
+
+<meta http-equiv="refresh" content={`0;url=/${DEFAULT_LOCALE}/`} />
