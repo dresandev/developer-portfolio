@@ -1,4 +1,5 @@
 ---
+import { HOST_URL } from "astro:env/client"
 import { SUPPORTED_LOCALES } from "@/i18n/ui"
 import { getLangFromUrl, useTranslations } from "@/i18n/utils"
 import Layout from "@/layouts/layout.astro"
@@ -6,6 +7,8 @@ import HeroSection from "@/sections/hero-section.astro"
 import ProjectsSection from "@/sections/projects-section.astro"
 import AboutMeSection from "@/sections/about-me-section.astro"
 import ContactSection from "@/sections/contact-section.astro"
+
+export const prerender = true
 
 export function getStaticPaths() {
   return SUPPORTED_LOCALES.map((locale) => ({
@@ -18,7 +21,7 @@ const t = useTranslations(locale)
 
 const title = t("seo.home.title")
 const description = t("seo.home.description")
-const canonical = `https://www.dresan.dev/${locale}/`
+const canonical = `${HOST_URL}/${locale}/`
 ---
 
 <Layout title={title} description={description} canonical={canonical}>
